@@ -1,0 +1,3709 @@
+{
+  "facilities": [
+    {
+      "code": "DISTRICT",
+      "jurisdiction": "District-Wide"
+    },
+    {
+      "code": "EWH",
+      "jurisdiction": "Lynnwood"
+    },
+    {
+      "code": "HWE",
+      "jurisdiction": "Sno. Co."
+    },
+    {
+      "code": "Varies",
+      "jurisdiction": "Varies"
+    },
+    {
+      "code": "EDE",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "AECC",
+      "jurisdiction": "Sno. Co."
+    },
+    {
+      "code": "SWE",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "TPE",
+      "jurisdiction": "Mt. Lake Terrace"
+    },
+    {
+      "code": "MW K-8",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "nan",
+      "jurisdiction": null
+    },
+    {
+      "code": "Location",
+      "jurisdiction": "Juristiction"
+    },
+    {
+      "code": "CVE",
+      "jurisdiction": "Lynnwood"
+    },
+    {
+      "code": "MLE",
+      "jurisdiction": "Sno. Co."
+    },
+    {
+      "code": "MTF",
+      "jurisdiction": "Lynnwood"
+    },
+    {
+      "code": "MDH",
+      "jurisdiction": "Lynnwood"
+    },
+    {
+      "code": "WWC",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "AWM",
+      "jurisdiction": "Sno. Co."
+    },
+    {
+      "code": "MDM",
+      "jurisdiction": "Lynnwood"
+    },
+    {
+      "code": "LWH",
+      "jurisdiction": "Sno. Co."
+    },
+    {
+      "code": "Stadium",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "BRE",
+      "jurisdiction": "Sno. Co."
+    },
+    {
+      "code": "MDE",
+      "jurisdiction": "Lynnwood"
+    },
+    {
+      "code": "HTE",
+      "jurisdiction": "Sno. Co."
+    },
+    {
+      "code": "CWE",
+      "jurisdiction": "Mt. Lake Terrace"
+    },
+    {
+      "code": "SVE",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "HTE/SWE",
+      "jurisdiction": "Sno. Co."
+    },
+    {
+      "code": "MDH, CLE",
+      "jurisdiction": "Lynnwood"
+    },
+    {
+      "code": "OHE",
+      "jurisdiction": "Varies"
+    },
+    {
+      "code": "BVE",
+      "jurisdiction": "Lynnwood"
+    },
+    {
+      "code": "BTM",
+      "jurisdiction": "Brier"
+    },
+    {
+      "code": "CPM",
+      "jurisdiction": "Lynnwood"
+    },
+    {
+      "code": "CPE",
+      "jurisdiction": "Lynnwood"
+    },
+    {
+      "code": "BRE, EDE, MLE",
+      "jurisdiction": "Varies"
+    },
+    {
+      "code": "MTH",
+      "jurisdiction": "Mt. Lake Terrace"
+    },
+    {
+      "code": "BVE MTH",
+      "jurisdiction": null
+    },
+    {
+      "code": "MDE, MWC",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "WWE",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "ESC",
+      "jurisdiction": "Lynnwood"
+    },
+    {
+      "code": "MDH, MDE",
+      "jurisdiction": "Varies"
+    },
+    {
+      "code": "CWE, TPE, HTE",
+      "jurisdiction": "Varies"
+    },
+    {
+      "code": "LHS",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "WC",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "Vaires",
+      "jurisdiction": "Varies"
+    },
+    {
+      "code": "MTH,MDH,EWH",
+      "jurisdiction": null
+    },
+    {
+      "code": "varies",
+      "jurisdiction": "varies"
+    },
+    {
+      "code": "MWC",
+      "jurisdiction": null
+    },
+    {
+      "code": "FAM",
+      "jurisdiction": "Sno. Co"
+    },
+    {
+      "code": "BEVE",
+      "jurisdiction": "Lynnwood"
+    },
+    {
+      "code": "WGE",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "CLE",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "MWK",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "MD field",
+      "jurisdiction": "Lynnwood"
+    },
+    {
+      "code": "EE",
+      "jurisdiction": "Edmonds"
+    },
+    {
+      "code": "LH",
+      "jurisdiction": "Sno. Co."
+    },
+    {
+      "code": "MM",
+      "jurisdiction": "Lynwood"
+    },
+    {
+      "code": "Site"
+    },
+    {
+      "code": "MWK8"
+    },
+    {
+      "code": "Maint"
+    },
+    {
+      "code": "ALL OTHERS"
+    }
+  ],
+  "projects": [
+    {
+      "importKey": "7b05f41de6614213ec2654f1ee9a0a7138678910c0637deac7032e0eafba82df",
+      "facilityCode": "EWH",
+      "title": "Stadium ticket booth / gates",
+      "category": "Small Works",
+      "priorityCode": "001",
+      "fundingProgram": null,
+      "notes": "6-8w lead time for parts if failure; wooden dowel; oil leaks; pitting of tubes; leaks visible; in condensing, should not be; thermometer not working/inconsistent"
+    },
+    {
+      "importKey": "7189b293471e02459712c1b488d942cb64ae92930ec90b403137dfa28af8b5b6",
+      "facilityCode": "HWE",
+      "title": "Playground equipment",
+      "category": "Small Works",
+      "priorityCode": "002",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "fe059d571a32e6752fb0b04d0038637fcbd2b7b88e225a4ae4ec631557d782b2",
+      "facilityCode": "Varies",
+      "title": "Intercoms",
+      "category": "Small Works",
+      "priorityCode": "003",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "8b46809ccd7e9a85d90e4a34f9a2a2d367ee2a25a6a7c00e49ccdfd4bac0019e",
+      "facilityCode": "Varies",
+      "title": "LED Lighting Retrofit",
+      "category": "Small Works",
+      "priorityCode": "004",
+      "fundingProgram": null,
+      "notes": "exposed wires; wooden dowel; in condensing, should not be; pitting of tubes; gasket/valve leaks; HW Circ motor going out"
+    },
+    {
+      "importKey": "44761e9cb33208310badbaf889faf7ce492a25fe9b87ed0aa83a12e0d0617791",
+      "facilityCode": "EDE",
+      "title": "Boiler / HVAC",
+      "category": "Small Works",
+      "priorityCode": "006",
+      "fundingProgram": null,
+      "notes": "in condensing, should not be; sooting; rear door needs replaced; outlived expectancy"
+    },
+    {
+      "importKey": "bcb8f118a9856900f85d6c3ec91541a6ed0486162dd5fe005aec07c055d68f5d",
+      "facilityCode": "AECC",
+      "title": "Boiler / HVAC",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": "controller reached max cycle count; boiler past life expectancy"
+    },
+    {
+      "importKey": "9173213f23ca098a5e095d4e8ccf16b3119e22063712e1f8751fb10c902fb73f",
+      "facilityCode": "SWE",
+      "title": "Boiler / HVAC",
+      "category": "Small Works",
+      "priorityCode": "005",
+      "fundingProgram": null,
+      "notes": "Gordon Piatt burners are obsolete; controllers obsolete need replaced; boiler 2 showing signs of leaking"
+    },
+    {
+      "importKey": "c5bce72d5a6a757b87100ad9bb7abbfe9de908be4fd86b593ae441646f852ac8",
+      "facilityCode": "TPE",
+      "title": "Operable partitions",
+      "category": "Small Works",
+      "priorityCode": "020",
+      "fundingProgram": null,
+      "notes": "motorized valve just laying on top of boiler casing; boiler 1 leaky tube; both show signs of condensing, should not be; both boilers show signs of water in tubes; obsolete warrick low water controls; need new probes; manway corroded boiler 1"
+    },
+    {
+      "importKey": "338504e0d5e9f386bf1a788532f713f1689424d15472b5f66575573044665263",
+      "facilityCode": "MW K-8",
+      "title": "sprinkler piping",
+      "category": "Small Works",
+      "priorityCode": "009",
+      "fundingProgram": null,
+      "notes": "2 boilers; controllers are almost irreplaceable; excesive hot spot on rear door; boiler 1 at risk of warped back door; in condensing, should not be"
+    },
+    {
+      "importKey": "105582619dea1cb1459e76bb7b6855fbfa0eae875ca79745a57099fbc4e289f7",
+      "facilityCode": "MW K-8",
+      "title": "Pool Remodel",
+      "category": "Small Works",
+      "priorityCode": "010",
+      "fundingProgram": null,
+      "notes": "both boilers leaking, motors replaced recently; both show signs of leaking; safety valve piping laying on ground and cut, needs repair"
+    },
+    {
+      "importKey": "095ce19a77397f226e7e42b34931ef151e6416b83729efec5bbb1b26634a17f9",
+      "facilityCode": "nan",
+      "title": "2025 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": "safety valve leaking in boiler 1; controllers reached end of cycle count; combustion tune needed"
+    },
+    {
+      "importKey": "bb0129dff52a25c2d7dc270c2368e3ed20135e1911c2fb63dde2dfb650e830b8",
+      "facilityCode": "nan",
+      "title": "2026 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": "supply pumps leaking; controllers reached end of cycle; supply line j-box uncovered and wires hanging out"
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": "safety valves should be replaced (no date); media in condensate neutralizer needs replaced; need pot feeder"
+    },
+    {
+      "importKey": "5fd0d5cfb42e11694a8cca4ab75c9b925311159f480f8cb77d6e35f8d16918e1",
+      "facilityCode": "TPE",
+      "title": "Windows and Doors",
+      "category": "Small Works",
+      "priorityCode": "007",
+      "fundingProgram": null,
+      "notes": "boiler 1 burner cabinet is taped closed"
+    },
+    {
+      "importKey": "5253072755c7b5063a6d51a17f480698d77d404dc213dfb1db39753702c45c6f",
+      "facilityCode": "Varies",
+      "title": "Physical security upgrades",
+      "category": "Small Works",
+      "priorityCode": "008",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "d577d601536c7f51409ebb97dda314e973e072b5cdb4d22c87fc2e57c6f285d5",
+      "facilityCode": "nan",
+      "title": "2026 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "4031010ace4e6aa680c13508206c4428465bc992945ad1f1ec719b6cf6384d57",
+      "facilityCode": "nan",
+      "title": "2027 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "2244a53b03a5fcb461b8e37365c0ced2a853f0d5115d825c0fc2b7d3c310413b",
+      "facilityCode": "CVE",
+      "title": "Reroof",
+      "category": "Small Works",
+      "priorityCode": "011",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "7ba9055307b33eb964a199ad05d3f01a4d19472d2c1dcd537e2f5aa1a8388b80",
+      "facilityCode": "CVE",
+      "title": "Windows",
+      "category": "Small Works",
+      "priorityCode": "012",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "c93ddcdb3e35d690c9640f19ccd3b5aa110ab093de2c85290fad74f494e4a016",
+      "facilityCode": "MLE",
+      "title": "Windows and Doors",
+      "category": "Small Works",
+      "priorityCode": "013",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "6282c501be1678ba7bbf7423b2764831ce097f8fbb6281230d8d07190f58393d",
+      "facilityCode": "Varies",
+      "title": "Drinking Water",
+      "category": "Small Works",
+      "priorityCode": "014",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "ff077da6dcf768244db98929fbbb5a49f12a619d66733f591925421da9f62b78",
+      "facilityCode": "MTF",
+      "title": "Water over roadway",
+      "category": "Small Works",
+      "priorityCode": "015",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "1db8c457caa63fc4271f360584fa323e3939dce293f96047cf0400ad93b611a3",
+      "facilityCode": "Varies",
+      "title": "Stage Lighting",
+      "category": "Small Works",
+      "priorityCode": "016",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "e730231151efa2834f42c362ac6e956036a8815ab47682397ae8eeae1ea983ce",
+      "facilityCode": "nan",
+      "title": "2027 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5e171017a987cff3f571648d7eb9e335808166e76e70f349d52c18e110841cac",
+      "facilityCode": "nan",
+      "title": "2028 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "c735a56b55bcc27f76c01b0e471d8d14c6e11461be1c924fddb3483b99f91605",
+      "facilityCode": "MDH",
+      "title": "Bleachers",
+      "category": "Small Works",
+      "priorityCode": "017",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "289c900127f8ac92a1e157d68f10d13226c258c49de0596c3d66da56d5c28958",
+      "facilityCode": "SWE",
+      "title": "FireLane / Water line / Paving",
+      "category": "Small Works",
+      "priorityCode": "018",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "cebc9d3b7dd1a11708fe1406ed7d431473cdd45d67b753cc5ce6eb3171e42dd2",
+      "facilityCode": "WWC",
+      "title": "Furniture",
+      "category": "Small Works",
+      "priorityCode": "019",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "ae0decfdcd0d0f500e3e221660ace85ba763da76a266efe1bc6c86e6a073d358",
+      "facilityCode": "Varies",
+      "title": "VCT Floring",
+      "category": "Small Works",
+      "priorityCode": "021",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "268fd6e8bc1f0d40fcaa418e385f81bbb21463be60e4efb93db3062e76168ff7",
+      "facilityCode": "AWM",
+      "title": "6th to middle school",
+      "category": "Small Works",
+      "priorityCode": "022",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "e565a0928e612601bbb7b9862a478f5bb5d1efd78bec4ebdb7164370df0b51c0",
+      "facilityCode": "MDM",
+      "title": "6th to middle school",
+      "category": "Small Works",
+      "priorityCode": "023",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5e5f2a47cd2a68d5111fb62700a1aa14282a0a549fa7ffc285b6aa9902d57b31",
+      "facilityCode": "nan",
+      "title": "2028 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "39f4b49a137a72daf7c903ad75a449f6b77a4494ae49f043548252a5918c59d1",
+      "facilityCode": "nan",
+      "title": "2029 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "413378472b6e461c712b1bba18273176714f8327903133ea51dfa08625c08e9b",
+      "facilityCode": "Varies",
+      "title": "Partnership",
+      "category": "Small Works",
+      "priorityCode": "024",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "38a5eca0994d2f24c7d0b73c7d7be6c078b4f85f1b3618d5869866c403f87ebe",
+      "facilityCode": "nan",
+      "title": "escalation and costs",
+      "category": "Small Works",
+      "priorityCode": "025",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "709f6081d7444990745519cd43c0f2f7001a2d15ad0abc2a396da8fe04b3cefb",
+      "facilityCode": "nan",
+      "title": "2029 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "3bd876ef6d572475844f3faa807925553d7a87d0f5010b94a5498a1d7ece5912",
+      "facilityCode": "nan",
+      "title": "2025 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5d919db8894d60815957878164fe1cd563ebf831e65cd9a16fd7388184b7e4f0",
+      "facilityCode": "MDH",
+      "title": "Baseball Turf",
+      "category": "Small Works",
+      "priorityCode": "004",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "e121f0aa11e576dadce9c33b0d04cb71bbe382a5f94b020ea74ec67144187156",
+      "facilityCode": "MDH",
+      "title": "Softball Turf",
+      "category": "Small Works",
+      "priorityCode": "008",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "29b7261666245c09d2a5e3a013d4031c1d47e57dc52ad7dd5f2f5a6d4230c06a",
+      "facilityCode": "LWH",
+      "title": "Dampers / Piping",
+      "category": "Small Works",
+      "priorityCode": "007",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "095ce19a77397f226e7e42b34931ef151e6416b83729efec5bbb1b26634a17f9",
+      "facilityCode": "nan",
+      "title": "2025 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "bb0129dff52a25c2d7dc270c2368e3ed20135e1911c2fb63dde2dfb650e830b8",
+      "facilityCode": "nan",
+      "title": "2026 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5788991ab3d2b412512f99a82f4bc85d03e65190b2bc147f4a6c83892f372237",
+      "facilityCode": "Stadium",
+      "title": "Turf / Track / Drainage",
+      "category": "Small Works",
+      "priorityCode": "009",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "bc751cbcc32a21d0539e47371259d704be9721b15177c247d92d6dcf4493e05d",
+      "facilityCode": "AWM",
+      "title": "Field Turf",
+      "category": "Small Works",
+      "priorityCode": "010",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "2279ac538055442101988a637a103b10f00cb0e4ad29f046ecf00cb763be2e81",
+      "facilityCode": "BRE",
+      "title": "Boiler / HVAC",
+      "category": "Small Works",
+      "priorityCode": "003",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "a02392476ff4a9d3f730c8d22bb7b651b223a00f4adb9159a2bd7c10dc02a2d7",
+      "facilityCode": "HWE",
+      "title": "Boiler / HVAC",
+      "category": "Small Works",
+      "priorityCode": "001",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "4960a256df6697abd933dfa328ae005de5efa244fc34df6f2761b031820e8800",
+      "facilityCode": "MDH",
+      "title": "Boiler / HVAC",
+      "category": "Small Works",
+      "priorityCode": "005",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "f705f1ac86e1a74440d755c6cabe01360da95f8ac8558b780b69240cdcb60257",
+      "facilityCode": "EWH",
+      "title": "Boiler",
+      "category": "Small Works",
+      "priorityCode": "006",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "78c245c6be46d4ec52d8f6c6e2a663dc43743d9d9b629b1fb1d57cfb3b19e342",
+      "facilityCode": "Varies",
+      "title": "Boiler / HVAC",
+      "category": "Small Works",
+      "priorityCode": "016",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "03fb5496454f96bf4cc36af59182f7418304e127fabaefb072c8b012447d00c4",
+      "facilityCode": "MDM",
+      "title": "LED Lighting Retrofit",
+      "category": "Small Works",
+      "priorityCode": "011",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "b6ad871d9d8d8afa0c1499bcdcf001398c9a2f5b6e7aac7057205afca7d6a1a6",
+      "facilityCode": "MDE",
+      "title": "Field Turf",
+      "category": "Small Works",
+      "priorityCode": "012",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "a08b4ec687042f40ef394b7aec2cb8baba6fef9add81a88e118f36166d251d41",
+      "facilityCode": "nan",
+      "title": "Reroof",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "d577d601536c7f51409ebb97dda314e973e072b5cdb4d22c87fc2e57c6f285d5",
+      "facilityCode": "nan",
+      "title": "2026 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "4031010ace4e6aa680c13508206c4428465bc992945ad1f1ec719b6cf6384d57",
+      "facilityCode": "nan",
+      "title": "2027 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "e798f4000899a6d1cf3aeb9280164efb52b1849b0444921f7ae8382ba5af1e59",
+      "facilityCode": "Varies",
+      "title": "Security / Technology Lifecycle",
+      "category": "Small Works",
+      "priorityCode": "013",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "f8261fff373f6de79fcb28c29b8d9e40544a70ac13f3f10d68c08a107307cca3",
+      "facilityCode": "SWE",
+      "title": "Reroof",
+      "category": "Small Works",
+      "priorityCode": "014",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "f88a84407acb92af4a91ac7970a12c7c6bed36df4d42c7616674b4c62c4d685f",
+      "facilityCode": "HTE",
+      "title": "Reroof",
+      "category": "Small Works",
+      "priorityCode": "015",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "a282996dcb638bb98d928d5d2eec97f1471ca32bd37cdd1cabaf53b0c997094d",
+      "facilityCode": "Varies",
+      "title": "Accessbility / ADA / Restrooms",
+      "category": "Small Works",
+      "priorityCode": "017",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "e730231151efa2834f42c362ac6e956036a8815ab47682397ae8eeae1ea983ce",
+      "facilityCode": "nan",
+      "title": "2027 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5e171017a987cff3f571648d7eb9e335808166e76e70f349d52c18e110841cac",
+      "facilityCode": "nan",
+      "title": "2028 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "deb0b2d8b4db8e92915844f0c239f71204f3ca69a6aa4e7813b0d0c15ce35c58",
+      "facilityCode": "Varies",
+      "title": "Portables",
+      "category": "Small Works",
+      "priorityCode": "018",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "38a5eca0994d2f24c7d0b73c7d7be6c078b4f85f1b3618d5869866c403f87ebe",
+      "facilityCode": "nan",
+      "title": "escalation and costs",
+      "category": "Small Works",
+      "priorityCode": "019",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5e5f2a47cd2a68d5111fb62700a1aa14282a0a549fa7ffc285b6aa9902d57b31",
+      "facilityCode": "nan",
+      "title": "2028 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "043569bbeadd40294df07dc320365b5d76a1bde16b2efbbb66f30561d4b87e8b",
+      "facilityCode": "nan",
+      "title": "2023 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "0a959d21c655bbc72ecfcf662dc5d5a54c88106e9081242980ea95a04ef7328c",
+      "facilityCode": "CWE",
+      "title": "Boiler Upgrade",
+      "category": "Small Works",
+      "priorityCode": "001",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "7494c2b9c843c15c4561b0d5f4b4834e95bfd142b2097c648a2cb003385525b5",
+      "facilityCode": "Varies",
+      "title": "Field Signage Standards",
+      "category": "Small Works",
+      "priorityCode": "003",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "632cb3d6e175a98809cab4380d060a34cae2895dde065a59649c9984bffa40c1",
+      "facilityCode": "SVE",
+      "title": "Roof, Gutter, Cladding",
+      "category": "Small Works",
+      "priorityCode": "031",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "3fa76061728f5d75d5755bce7e5ef53d34beb7296c5ada0ccc2899c30afc9e7c",
+      "facilityCode": "HTE/SWE",
+      "title": "Playfield Upgrades",
+      "category": "Small Works",
+      "priorityCode": "033",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "c7e126f28715632099c13759ba27614222d2e8de53352f2bca839675b3a64907",
+      "facilityCode": "MDH, CLE",
+      "title": "Aluminum Storefront",
+      "category": "Small Works",
+      "priorityCode": "004",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "fb813b8b57a29d12157d9da2479809119fd818e4d8092f669729dafebf9f310a",
+      "facilityCode": "Stadium",
+      "title": "Grandstand Railing, Fencing, Gates",
+      "category": "Small Works",
+      "priorityCode": "005",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "bb5da92e0d56f91d3aa4c9901e94dc7a6fc1af33cf624286ff857b457d7ea879",
+      "facilityCode": "nan",
+      "title": "2023 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "a6e6cdf884306d1bbb1a98bee82d15966f61950c57cf004f0b5b56aa1f960a91",
+      "facilityCode": "nan",
+      "title": "2024 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "62d664018f60f3684725e766adc6673acbb9316268c846a7a8826fb563902886",
+      "facilityCode": "OHE",
+      "title": "Portables",
+      "category": "Small Works",
+      "priorityCode": "008",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "c2c5723be7f2d59c3a35ba0a24c234c50b0a72aec2606c66ef6d4b9282f8954a",
+      "facilityCode": "BVE",
+      "title": "Playfield Upgrades",
+      "category": "Small Works",
+      "priorityCode": "016",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "9c9c0ade8ebc00b49849d69a772585df1be2a317664e824e48233f8cc8431a53",
+      "facilityCode": "BTM",
+      "title": "Track Surface",
+      "category": "Small Works",
+      "priorityCode": "017",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "987a6a993622ce17b6e8dccf488bf6ce778cec3c7577a900a1edb4b94f0fd197",
+      "facilityCode": "CVE",
+      "title": "Gutter Replacement",
+      "category": "Small Works",
+      "priorityCode": "011",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "db6261de3c8d57770e6017d0866b88c9c1dc6b671a616676261b6c087e94cf9c",
+      "facilityCode": "nan",
+      "title": "2024 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "3bd876ef6d572475844f3faa807925553d7a87d0f5010b94a5498a1d7ece5912",
+      "facilityCode": "nan",
+      "title": "2025 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "1dd78db8c4b78ee34ccf0b772b0cbed9e9e6f1364a8ff30745acfdecc4aa57d0",
+      "facilityCode": "Varies",
+      "title": "Accessibility Improvement",
+      "category": "Small Works",
+      "priorityCode": "012",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "1dd78db8c4b78ee34ccf0b772b0cbed9e9e6f1364a8ff30745acfdecc4aa57d0",
+      "facilityCode": "Varies",
+      "title": "Accessibility Improvement",
+      "category": "Small Works",
+      "priorityCode": "006",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "769b59b560cef9795cfa9d0a9ec04686f6af95cdb752cf1d88a304957ecac577",
+      "facilityCode": "Varies",
+      "title": "Fire Alarm System Upgrades",
+      "category": "Small Works",
+      "priorityCode": "007",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "eea7e634ce75863c7adf36c45be8d57cc500c49dc81615b0d0ba556482540091",
+      "facilityCode": "CPM",
+      "title": "Capacity Mitigation",
+      "category": "Small Works",
+      "priorityCode": "015",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "7494c2b9c843c15c4561b0d5f4b4834e95bfd142b2097c648a2cb003385525b5",
+      "facilityCode": "Varies",
+      "title": "Field Signage Standards",
+      "category": "Small Works",
+      "priorityCode": "024",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5ce64427ea07c1fb6580004a719680e60970fe0c99b77409348a3a1cfc8318bd",
+      "facilityCode": "CPE",
+      "title": "Roof Replacement",
+      "category": "Small Works",
+      "priorityCode": "009",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "98d6751e86bc7d231b95fbbdaefbb36f674c49c76860cdad4af88f2f924420a0",
+      "facilityCode": "BRE, EDE, MLE",
+      "title": "Covered Play Areas",
+      "category": "Small Works",
+      "priorityCode": "010",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "deb0b2d8b4db8e92915844f0c239f71204f3ca69a6aa4e7813b0d0c15ce35c58",
+      "facilityCode": "Varies",
+      "title": "Portables",
+      "category": "Small Works",
+      "priorityCode": "018",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "25c2ed90d8f059d87b168dbf067b69bc1b21a2ea563406c8fad03331cb531177",
+      "facilityCode": "MTH",
+      "title": "Exterior Cladding",
+      "category": "Small Works",
+      "priorityCode": "019",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "f7a52fa052b78a33888fcc6a6c18bd9602f248c5840cafd934b43a3fd8f254b9",
+      "facilityCode": "EWH",
+      "title": "Multipurpose Field",
+      "category": "Small Works",
+      "priorityCode": "020",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "bd584e76ed5986bf18aec2aaf8a0e7d8523a584de58e0f3f58a49318bbb347c3",
+      "facilityCode": "MLE",
+      "title": "HVAC boiler",
+      "category": "Small Works",
+      "priorityCode": "021",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "621c72f819333f46f1dcdcfbf399c5acdfd4be78285770ea8d6e40ffbc8b91c7",
+      "facilityCode": "MTH",
+      "title": "HVAC",
+      "category": "Small Works",
+      "priorityCode": "022",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "095ce19a77397f226e7e42b34931ef151e6416b83729efec5bbb1b26634a17f9",
+      "facilityCode": "nan",
+      "title": "2025 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "bb0129dff52a25c2d7dc270c2368e3ed20135e1911c2fb63dde2dfb650e830b8",
+      "facilityCode": "nan",
+      "title": "2026 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "1dd78db8c4b78ee34ccf0b772b0cbed9e9e6f1364a8ff30745acfdecc4aa57d0",
+      "facilityCode": "Varies",
+      "title": "Accessibility Improvement",
+      "category": "Small Works",
+      "priorityCode": "023",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "769b59b560cef9795cfa9d0a9ec04686f6af95cdb752cf1d88a304957ecac577",
+      "facilityCode": "Varies",
+      "title": "Fire Alarm System Upgrades",
+      "category": "Small Works",
+      "priorityCode": "025",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "92e38a7bea2d70673a7c2b974bfff0bcd892ab9cc01802e003d99b25a2d73ef1",
+      "facilityCode": "Varies",
+      "title": "HVAC/ clean buildings act",
+      "category": "Small Works",
+      "priorityCode": "032",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "71a2b4232f43bdc2359f122871a74e5dd0279cc992fddcb4549ce5f29addcd8d",
+      "facilityCode": "Location",
+      "title": "Playfield Upgrades",
+      "category": "Small Works",
+      "priorityCode": "013",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "513e125b9b41dbe8b4e47f343855864fa6a2db755fa267f2a2ae9dc8e6f30cdf",
+      "facilityCode": "TPE",
+      "title": "Exterior Cladding",
+      "category": "Small Works",
+      "priorityCode": "014",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "72fb0526b6058bd6362ffe6b93ac83b4cd4e2999aaf982040ec5859260a9467e",
+      "facilityCode": "BVE MTH",
+      "title": "Readerboard",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "513f3f4f0ff7509ba7c4d315f38c605d4d208365ebe31ea1ea88e41a9cedf705",
+      "facilityCode": "MDE, MWC",
+      "title": "HVAC",
+      "category": "Small Works",
+      "priorityCode": "026",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "a0c36d7a1753efc459b3aafb5e291d35ef27c7520ffc21547cb83be014323d9a",
+      "facilityCode": "MDE, MWC",
+      "title": "Gutters",
+      "category": "Small Works",
+      "priorityCode": "027",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "ee2ced1bb41b141fefd7996cc3a5c3796037c8632bf8eb4e007b33b2e1367d90",
+      "facilityCode": "WWC",
+      "title": "Parking Lot Paving",
+      "category": "Small Works",
+      "priorityCode": "028",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "deb0b2d8b4db8e92915844f0c239f71204f3ca69a6aa4e7813b0d0c15ce35c58",
+      "facilityCode": "Varies",
+      "title": "Portables",
+      "category": "Small Works",
+      "priorityCode": "029",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "d577d601536c7f51409ebb97dda314e973e072b5cdb4d22c87fc2e57c6f285d5",
+      "facilityCode": "nan",
+      "title": "2026 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "4031010ace4e6aa680c13508206c4428465bc992945ad1f1ec719b6cf6384d57",
+      "facilityCode": "nan",
+      "title": "2027 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "1dd78db8c4b78ee34ccf0b772b0cbed9e9e6f1364a8ff30745acfdecc4aa57d0",
+      "facilityCode": "Varies",
+      "title": "Accessibility Improvement",
+      "category": "Small Works",
+      "priorityCode": "030",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "cb075bbec0e489550713e9fcc01d670ea89dbf8b81baf9d87830e6d990c63561",
+      "facilityCode": "WWC",
+      "title": "Walkway roof",
+      "category": "Small Works",
+      "priorityCode": "034",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "deb0b2d8b4db8e92915844f0c239f71204f3ca69a6aa4e7813b0d0c15ce35c58",
+      "facilityCode": "Varies",
+      "title": "Portables",
+      "category": "Small Works",
+      "priorityCode": "035",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "e730231151efa2834f42c362ac6e956036a8815ab47682397ae8eeae1ea983ce",
+      "facilityCode": "nan",
+      "title": "2027 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5e171017a987cff3f571648d7eb9e335808166e76e70f349d52c18e110841cac",
+      "facilityCode": "nan",
+      "title": "2028 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "b503748a6fba2635290bba25eafd0d325da494034b7cbd4604152c17f434e490",
+      "facilityCode": "nan",
+      "title": "Inflation reserve",
+      "category": "Small Works",
+      "priorityCode": "000",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5e5f2a47cd2a68d5111fb62700a1aa14282a0a549fa7ffc285b6aa9902d57b31",
+      "facilityCode": "nan",
+      "title": "2028 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "e316aa3f6932cf4a7fc841f9f8a94ca09ef51c5dd97d0b514ea5a1222c7c115e",
+      "facilityCode": "nan",
+      "title": "2020 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "c70b53e05b6b0dc4848149f0f8531daaa21a91a93bdca9b63093776bbf926f43",
+      "facilityCode": "Varies",
+      "title": "TPE Portable",
+      "category": "Small Works",
+      "priorityCode": "001",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "c84313e1cdf692f6a4baa328e0ed828fcb677f2ad4707f163bf7b74f53d7ebc6",
+      "facilityCode": "WWE",
+      "title": "DDC Upgrade",
+      "category": "Small Works",
+      "priorityCode": "002",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "e7f0fdc0f2669e3f5b3b7225ccb640ec049383338cfd053e5d03e0984b59387f",
+      "facilityCode": "nan",
+      "title": "2020 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c403d3baa353fb47b9cfe2366f9b4c69df1ac1614f6d4af3cc607584fba140b",
+      "facilityCode": "nan",
+      "title": "2021 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "80498c963edaeea2ab25bf63f64cc5fee7373e0e081205fba13eef57915b52db",
+      "facilityCode": "MTH",
+      "title": "Gym Bleachers",
+      "category": "Small Works",
+      "priorityCode": "005",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "2668753e353a3f44fc3110926904d9b658305720ba26ba2648b434703b3c544b",
+      "facilityCode": "EWH",
+      "title": "Soundsystem",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "783eceb623349237aa3edf344a3b9f9693c7f7ae9cb421001e138d371ff05250",
+      "facilityCode": "nan",
+      "title": "2021 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5acbb77f57b5471d7892e4c65ffd8ca83fd3208d2a303a814281a59f9b8488ca",
+      "facilityCode": "nan",
+      "title": "2022 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "09652760dc4844f4490cc8016c1440e6acb50c95179d8373730aa67b5a1a3cb8",
+      "facilityCode": "Varies",
+      "title": "SecurityCameras / AC",
+      "category": "Small Works",
+      "priorityCode": "003",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "d94816c722b7adc50316a2af84da0cb47ca5798ef85619341c1e124ed7cceadf",
+      "facilityCode": "ESC",
+      "title": "HVAC, Lighting, Roof",
+      "category": "Small Works",
+      "priorityCode": "016",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "972741a2e9786c2007e4f221ad738a641a28ee005e17389bc8475abce2c87568",
+      "facilityCode": "MDH, MDE",
+      "title": "Large Comm (Reader scoreboards etc)",
+      "category": "Small Works",
+      "priorityCode": "019",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "194083778343617a0e91f740a08572db8f225c282e91216b1f1ecf65f1d89c63",
+      "facilityCode": "CWE, TPE, HTE",
+      "title": "Portables",
+      "category": "Small Works",
+      "priorityCode": "017",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "ecfe8ea588514b380d1efee9a29c00141eeb9b493aea9d7d6395982270986a05",
+      "facilityCode": "nan",
+      "title": "2022 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5f4f9e7256dc8c64b9546ea754263c4da4526bd7453c6fcc030af5cc0d53e4c3",
+      "facilityCode": "nan",
+      "title": "2023 completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "a0d8d5a51d53701844ee7ea6cb569aeeb4299233a98ad0232002d80abf37576a",
+      "facilityCode": "EWH",
+      "title": "Gym Bleachers",
+      "category": "Small Works",
+      "priorityCode": "009",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "a123ef221d0d54121a3475090df72b6c8270210fbfa9c677234c7923984820e2",
+      "facilityCode": "LHS",
+      "title": "Tennis Court Surface",
+      "category": "Small Works",
+      "priorityCode": "010",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "e5586319951f12a774dbfd2d3bac78af18681356fdf2a328b6850cb948b9c6fd",
+      "facilityCode": "WC",
+      "title": "Asbestos Tile",
+      "category": "Small Works",
+      "priorityCode": "011",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "2af512c6a5268b6de98652d34e4f5d49d9a669acd4584f8f3dfa81356b8769ad",
+      "facilityCode": "MTH",
+      "title": "Softball field, Duggouts, Bleachers",
+      "category": "Small Works",
+      "priorityCode": "014",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "27a2638f47c17221b3881da262ddc76e5dcfafeb75dbdf6fe5af5108bed0169a",
+      "facilityCode": "EWH",
+      "title": "Weight Room Floor",
+      "category": "Small Works",
+      "priorityCode": "006",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "c51a596bb0281fc4a17e1d7f09dcc1c0791b16b61f75d71844527b5c1482e1e5",
+      "facilityCode": "EWH",
+      "title": "Kitchen & locker Floor",
+      "category": "Small Works",
+      "priorityCode": "004",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "0c1f77ec899512effbb90e23352222c3adb2c7c773b046c2586b9aa20078e65e",
+      "facilityCode": "SVE",
+      "title": "Gym floor",
+      "category": "Small Works",
+      "priorityCode": "012",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "bb5da92e0d56f91d3aa4c9901e94dc7a6fc1af33cf624286ff857b457d7ea879",
+      "facilityCode": "nan",
+      "title": "2023 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "ecfc957b1d39da2c93c2e471a3bf765060a8c5184b8a9c7b7871b630e8b5fc7c",
+      "facilityCode": "nan",
+      "title": "2024 completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "4c6c5d94583408c35e54557f74f4c29988fb7fe03cd9fca8734c5bb04abcee1c",
+      "facilityCode": "BTM",
+      "title": "Softball Field Drainage",
+      "category": "Small Works",
+      "priorityCode": "013",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "561b82b60edc71a03f3993823496a36dd112919476f4b54d41dc21401cd356b2",
+      "facilityCode": "Vaires",
+      "title": "Portables",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5a4f832ee92e5cfdd8b9693452ba708fd2e420c1b3e0d001cdc96201b9a3a1f9",
+      "facilityCode": "Varies",
+      "title": "Security: phase 3 Fence / AC",
+      "category": "Small Works",
+      "priorityCode": "003",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "fb481269adf96f52dfc9bd443fffe7a7b0547d4f058a8f594c2203e21700606b",
+      "facilityCode": "nan",
+      "title": "Security: remainder",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "4505ecb07c65ed5ead7c66e5c51ae21877e8f0d4c4dce469c7f7b71d5daf3a42",
+      "facilityCode": "nan",
+      "title": "Track Upgrade",
+      "category": "Small Works",
+      "priorityCode": "008",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "2d2b77ecf1f0482d49017a3cc22bf8ad18231dbb147adbcd469a9dd5db8c9484",
+      "facilityCode": "Varies",
+      "title": "Soundsystems",
+      "category": "Small Works",
+      "priorityCode": "015",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "db6261de3c8d57770e6017d0866b88c9c1dc6b671a616676261b6c087e94cf9c",
+      "facilityCode": "nan",
+      "title": "2024 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "ec9bcb501455d82508f6c882492bb96c4f09f5a59e643a553b621463c81a5a0c",
+      "facilityCode": "nan",
+      "title": "2025 completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "9b0663c7c3d31d8d4575e4e1ccb3f012242aa44d4bfa17a13e3fe2e7340291bf",
+      "facilityCode": "nan",
+      "title": "2025 Subtotal:",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "16917d6c6c0da684c8786ee42173e4615c93a6514c89563dfea403e246dfd844",
+      "facilityCode": "nan",
+      "title": "2026 completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "413378472b6e461c712b1bba18273176714f8327903133ea51dfa08625c08e9b",
+      "facilityCode": "Varies",
+      "title": "Partnership",
+      "category": "Small Works",
+      "priorityCode": "018",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "80583d59c52e484e3878d1f1d66cb0f2c53bf4ae5b629f9e5563d8d8080d8f56",
+      "facilityCode": "Varies",
+      "title": "Security: AX Controller Upgrade",
+      "category": "Small Works",
+      "priorityCode": "007",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "7d71f8d8edcc3b5c9f46f523a44a8ce62f7b8409ab2643567ae14923752e9e8a",
+      "facilityCode": "nan",
+      "title": "Site Tech Infrastructure",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "7618eca619af9680360f428e0dbb7e4e9ad5c78e28c4f672a6eeeab230450e73",
+      "facilityCode": "nan",
+      "title": "2026 Subtotal:",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "b9cd47cff86199e9fe04d3cad793e4201ba850da98663ec07b0247a221d12566",
+      "facilityCode": "nan",
+      "title": "2016 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "755c44e17b26708014d43db4bd5550c2fe461b1af810e2124adebc704ab0764d",
+      "facilityCode": "MDH",
+      "title": "Gym Roof",
+      "category": "Small Works",
+      "priorityCode": "001",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "d0cd716a14ad037841fe61a59d758f57d9372f02eeac60c5d7cf85a7b2749ed0",
+      "facilityCode": "nan",
+      "title": "2016 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "f922312185f75e6c3baad0f8ce0458c643ba0039c7bdde5956508d6dd056ab4d",
+      "facilityCode": "nan",
+      "title": "2017 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "3c14dfd086ffd66fcea06dabb92f0de04ec30dd2f8ea5a91a511784c00c95885",
+      "facilityCode": "MLE",
+      "title": "domestic Water",
+      "category": "Small Works",
+      "priorityCode": "004",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "8cc5362f6ea62711ae3237bf18a94063940d34014ed50012a5c4de7ac38a63c9",
+      "facilityCode": "MTH,MDH,EWH",
+      "title": "Tenis court surface",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "cdff9d6fdc698517930b55d9f8db49306698af7747663d262ceeaceb7df8ca27",
+      "facilityCode": "CVE",
+      "title": "south Field",
+      "category": "Small Works",
+      "priorityCode": "012",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "8214e10ea488ac65e8db9079d424e3a315d5744275f0be13887a1beae8927a65",
+      "facilityCode": "CVE",
+      "title": "north field",
+      "category": "Small Works",
+      "priorityCode": "011",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "fdbd2afddff2360eb02966f4d6f86ee79e17e21257627c8eada301e7f9f472d4",
+      "facilityCode": "nan",
+      "title": "2017 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "46ff2779099478ced04ce7427736d2c38a3662ec43967397c66c247c93bb4881",
+      "facilityCode": "nan",
+      "title": "2018 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "07cdece6edbb3c07560f1a2ee5bedc60380a08e12bd36f557635494679729ceb",
+      "facilityCode": "EWH",
+      "title": "Baseball tennis & lighting",
+      "category": "Small Works",
+      "priorityCode": "005",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "65f033faf3572513ee605c7449fdc018de75eab01661c4c2e656b7c678e35559",
+      "facilityCode": "nan",
+      "title": "2018 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "e6e0b44a73cdb3351a7e7c05d2a5c03cee3268e8b3e6b897664f032f0fef5402",
+      "facilityCode": "nan",
+      "title": "2019 completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "3426be520541846693facb6583044ede9b82bdb2d3555afdd1f610a857aa6254",
+      "facilityCode": "MDH",
+      "title": "Tennis Courts & lights",
+      "category": "Small Works",
+      "priorityCode": "006",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "072b11c313ac16ea19def00be96386700898ecf24ca9c6f64871c7dba25edd87",
+      "facilityCode": "MDH",
+      "title": "baseball field turf",
+      "category": "Small Works",
+      "priorityCode": "014",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "06adbe3c31ccf0bd6f0f8f74a31cacd12bb5c70e34f521beab35f0539859751a",
+      "facilityCode": "LWH",
+      "title": "baseball field turf",
+      "category": "Small Works",
+      "priorityCode": "008",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "154455675d109fb1e9ac6a95a8ef6617d9e0b99af446032efefceb42171091ec",
+      "facilityCode": "LWH",
+      "title": "Field / track surface",
+      "category": "Small Works",
+      "priorityCode": "007",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "c14db64a5cdeb1c4b408c74c34b11cb03ebd80962f597ec5dddeafa82a1f2207",
+      "facilityCode": "nan",
+      "title": "2019 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "8be3a96df9a64465da555b6b7974034f961f1de4a2a2e781d3f6d5a8b70c09bf",
+      "facilityCode": "nan",
+      "title": "2020 completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "6f654ccfaf8dd5e205c41e42e2c21ce044d42f4cf3cd6d20c7c241f68cf1064b",
+      "facilityCode": "HWE",
+      "title": "Flat Roof",
+      "category": "Small Works",
+      "priorityCode": "009",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "e7f0fdc0f2669e3f5b3b7225ccb640ec049383338cfd053e5d03e0984b59387f",
+      "facilityCode": "nan",
+      "title": "2020 subtotal",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "989ad51707af878f3f862f7c215bc1e2b98588344fe53797f3ff780ac80fd461",
+      "facilityCode": "nan",
+      "title": "2021 completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "3dd06bcad041dcc1ddbd5cc169f057fd83b613c1b883daca864d97055f1626c3",
+      "facilityCode": "EDE",
+      "title": "Roof",
+      "category": "Small Works",
+      "priorityCode": "003",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "3431a57605267fef8845d623e7f60d1694d29cb2e65896042ae1c4ddf1e8173e",
+      "facilityCode": "varies",
+      "title": "Partnership",
+      "category": "Small Works",
+      "priorityCode": "015",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "76fb5a395369d8d5788fec9b18175664458755db2866f092446a9f73ac0d8818",
+      "facilityCode": "nan",
+      "title": "2021 Subtotal:",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "27b41b8e33799dafd8ea57e9fa3fd734422ba1f596c5fb472809c738e031864c",
+      "facilityCode": "nan",
+      "title": "2022 completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "ffa0d4f11decab1c32f7cbfd218104adb90194d6f48dbcc68fd1a29a902d8bc0",
+      "facilityCode": "SWE",
+      "title": "domestic Water",
+      "category": "Small Works",
+      "priorityCode": "Ded",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "270277b56ebb33a125c71c714e3643de360ed439aa8f3856a7d0b480d7f16e21",
+      "facilityCode": "varies",
+      "title": "fall protection",
+      "category": "Small Works",
+      "priorityCode": "002",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "0bc0b4eb77e99076091b2ea4d129949ae7463d6c3d4518ec4d797dff0f213b81",
+      "facilityCode": "CPM",
+      "title": "Gym Siding",
+      "category": "Small Works",
+      "priorityCode": "Add",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "d1c65b300fdd6425ac49c44fa2d941fa1575bc1390b1d6aed41164138ece8c7a",
+      "facilityCode": "MWC",
+      "title": "Boiler",
+      "category": "Small Works",
+      "priorityCode": "Add",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "c8021a801b0c26e586878a4afbb097d94c22bececfe3eebf032b307ee1e483be",
+      "facilityCode": "FAM",
+      "title": "Seismic",
+      "category": "Small Works",
+      "priorityCode": "013",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "708618403de23057ced12c91a3efddc5004e84a2091af91a5ac5fad9d5356060",
+      "facilityCode": "BTM",
+      "title": "Roof",
+      "category": "Small Works",
+      "priorityCode": "013",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "7210b83945f6c27a9d005188ad50338f4eeffe5fc2a7d65aa5598daf6d4b3dc3",
+      "facilityCode": "nan",
+      "title": "2022 Subtotal:",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "db2f4998ef1c47f1fa852aef746661e93b9c89e7af20809d4f354f85d2248936",
+      "facilityCode": "nan",
+      "title": "2015 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "915bf3d69707acc531f8434960936d87afec3e966ed28ded20655b0c815d2541",
+      "facilityCode": "WC",
+      "title": "Waterline",
+      "category": "Small Works",
+      "priorityCode": "001",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "28080aa77c0c921a605b26923c0c9a7e6edc1fd26d42c16a081dab45d353a1c4",
+      "facilityCode": "EWH",
+      "title": "Stadium",
+      "category": "Small Works",
+      "priorityCode": "008",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "946b70db4c4e48209c051d0e02a94155f918a4f3ceb22698a1603be895970ca1",
+      "facilityCode": "EWH",
+      "title": "Lighting",
+      "category": "Small Works",
+      "priorityCode": "017",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5006dacd59da4450ea0f2b13126b4c33c4863638f8d0c838c3621362af750e68",
+      "facilityCode": "BTM",
+      "title": "Paving",
+      "category": "Small Works",
+      "priorityCode": "011",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "ece86388f940a33bc4e6369da3f78667c3907b22bc4e07a3d582ebd5efc903c2",
+      "facilityCode": "SWE",
+      "title": "Traffic",
+      "category": "Small Works",
+      "priorityCode": "014",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "ab51077f0f45d42a93ec2bc04fc9590c34436e216bc6cc9cc1f9264f63b4a05a",
+      "facilityCode": "SWE",
+      "title": "Playground & Parking",
+      "category": "Small Works",
+      "priorityCode": "074",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "f9338927645c9424b68e80051c79f1fdcd6b17418d8f6dc4f9d43aaaed9d4972",
+      "facilityCode": "SWE",
+      "title": "Field Drainage",
+      "category": "Small Works",
+      "priorityCode": "073",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "190d4361d53b9a2ba6bb5fefeec9543fb8fec06904f0099c6c9d126ec2ca6281",
+      "facilityCode": "BEVE",
+      "title": "Floor",
+      "category": "Small Works",
+      "priorityCode": "005",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "ef958e6ce4bab516f68eec5ff34798a4f2ddad17d3f1b930db6c316a192009c2",
+      "facilityCode": "WGE",
+      "title": "Floor",
+      "category": "Small Works",
+      "priorityCode": "028",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "2b54b811327f841149c7e8b6907f3a63593afae6187562432165a81b327fe17c",
+      "facilityCode": "MLE",
+      "title": "Floor",
+      "category": "Small Works",
+      "priorityCode": "035",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "eb0494385e791c7b42a43e03555847b30e5625ba93de7b759e7aef66221d06bb",
+      "facilityCode": "HWE",
+      "title": "Sprinkler",
+      "category": "Small Works",
+      "priorityCode": "057",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "435f9af439db6d82bd23c9335af8f76ee4594041fdac0f0f58e983a4cf0923cf",
+      "facilityCode": "nan",
+      "title": "15 Subtotal:",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "b9cd47cff86199e9fe04d3cad793e4201ba850da98663ec07b0247a221d12566",
+      "facilityCode": "nan",
+      "title": "2016 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "8fbc6611a7bb0060d0a1078455ac9af77146a205e2e318035a5864aadc60bc1c",
+      "facilityCode": "BEVE",
+      "title": "Playground & Parking",
+      "category": "Small Works",
+      "priorityCode": "004",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "65da3603dbecc4946e6c26a2306eedef982af9477acf3e21c2c42e82997a246b",
+      "facilityCode": "CPM",
+      "title": "Playground & Parking",
+      "category": "Small Works",
+      "priorityCode": "026",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "ced9887d74583db6347f8f6854db78cbed1e2f5a8ac835180c5ebceb498328bc",
+      "facilityCode": "CPE",
+      "title": "Parking",
+      "category": "Small Works",
+      "priorityCode": "049",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5abbc404549feec2d901221d1dd266d158d271583305267bf888ce61e5794103",
+      "facilityCode": "CWE",
+      "title": "Traffic",
+      "category": "Small Works",
+      "priorityCode": "044",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "f2faa452af8d911c7b244caa4284251995f281a9a0829945b77cc1eece9657df",
+      "facilityCode": "MDE",
+      "title": "Playshed",
+      "category": "Small Works",
+      "priorityCode": "023",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "a6938bc8624e1b7813361852b6f44fcdc1ee9cf0f2a4b82fad1322656a3550bb",
+      "facilityCode": "CWE",
+      "title": "Floor",
+      "category": "Small Works",
+      "priorityCode": "010",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "a29f626ff8a58475dd2b8b2ae2a6592872fff228203cdeebd29d049f294075b7",
+      "facilityCode": "HTE",
+      "title": "Floor",
+      "category": "Small Works",
+      "priorityCode": "018",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "0229894895430bda1a96c5f1cdddd536add3a64b3054d6121ef68fa421ef33e3",
+      "facilityCode": "MTH",
+      "title": "Windows & Doors P1",
+      "category": "Small Works",
+      "priorityCode": "019",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "a4000240e465f01ba99b5117193eb005848532f55d05bd7f6fae3ca20f18ea97",
+      "facilityCode": "MTH",
+      "title": "Windows & Doors P2",
+      "category": "Small Works",
+      "priorityCode": "032",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "bfceab66e6de84ee1127f1935fa219e0600320dedcba257309eb3220ad16c1ff",
+      "facilityCode": "MTH",
+      "title": "Field Surface",
+      "category": "Small Works",
+      "priorityCode": "069",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "b72f43823974832fe2bc4ab44edc27941d41d1c8a6caa58223cd4fedfd195a71",
+      "facilityCode": "MTH",
+      "title": "Track Surface",
+      "category": "Small Works",
+      "priorityCode": "013",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "eecbd95cc67636b8db6c71bcdfdc1d5235b167b4f58ed9e53e27cedc8e62e9d5",
+      "facilityCode": "MDH",
+      "title": "Track & Field Surface",
+      "category": "Small Works",
+      "priorityCode": "009",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "d70a6aaa5aa8cb28d8efa3182bc7f64db147261b77b6a506abfa9a9ad531b77c",
+      "facilityCode": "CLE",
+      "title": "HVAC Boiler",
+      "category": "Small Works",
+      "priorityCode": "020",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "7e2685cc65048c16424540cc7c92ad3c35e1413781e38efd4ed5554d6cf20ed7",
+      "facilityCode": "CLE",
+      "title": "HVAC Exhaust",
+      "category": "Small Works",
+      "priorityCode": "046",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "2b5f551d3186e7b3a3fc1b32257f32fecbea4d142679596142df1503b86a8c2c",
+      "facilityCode": "SVE",
+      "title": "Field Drainage",
+      "category": "Small Works",
+      "priorityCode": "077",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "54251cf9135bdcdfd67dbf5958abd1241a585a81ff9355df6dba2cf3f7ea5b37",
+      "facilityCode": "MWK",
+      "title": "HVAC",
+      "category": "Small Works",
+      "priorityCode": "030",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "f0be80ba7dd22e278b734d851e61792695cf694eaaff2f8278f0251569880e5d",
+      "facilityCode": "nan",
+      "title": "16 Subtotal:",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "f922312185f75e6c3baad0f8ce0458c643ba0039c7bdde5956508d6dd056ab4d",
+      "facilityCode": "nan",
+      "title": "2017 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "9f781877b1fe42b05e9c4088625f63bbb7b7a9a300d777fa964cc2118c8f7394",
+      "facilityCode": "MLE",
+      "title": "Roof",
+      "category": "Small Works",
+      "priorityCode": "02",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "34bc1aeffc01926ce8110736cd6158f0e435e7e2445d80e364251a96550e101f",
+      "facilityCode": "MLE",
+      "title": "Windows & Doors",
+      "category": "Small Works",
+      "priorityCode": "051",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "aea89306374a19110272e30e85eb8ff9dc652e361acb1aebc894dd194226a290",
+      "facilityCode": "MTH",
+      "title": "Cooling",
+      "category": "Small Works",
+      "priorityCode": "?",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "ac7e26fd08ca93690475e9c4baa8332b2eb0ea01b7430666a147ccd3089a534e",
+      "facilityCode": "MD field",
+      "title": "Field Surface",
+      "category": "Small Works",
+      "priorityCode": "031",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "6774aee974be4636c72ccf2ab72ec3d303d118e54c3a9323df9421cf87ff5888",
+      "facilityCode": "BRE",
+      "title": "Floor",
+      "category": "Small Works",
+      "priorityCode": "039",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "c2b57767880838b1c34f521c6434a0ecfd1dd9da66f1ab1e920bbc8d8e891d06",
+      "facilityCode": "CPE",
+      "title": "Playshed",
+      "category": "Small Works",
+      "priorityCode": "016",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "89f33f90f410c05833782ab34574663486a1f4b0cd30febc48d482374960b266",
+      "facilityCode": "nan",
+      "title": "17 Subtotal:",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "46ff2779099478ced04ce7427736d2c38a3662ec43967397c66c247c93bb4881",
+      "facilityCode": "nan",
+      "title": "2018 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "c73c9a78a6e5c9bc6355e9f4f38275d504af178136531c4152265452c1759641",
+      "facilityCode": "WC",
+      "title": "Downspout & Drainage",
+      "category": "Small Works",
+      "priorityCode": "012",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "d26083ba50830905a1250ab433533afe1dc36dd8d0697c7be04b0d1a60e3b836",
+      "facilityCode": "WC",
+      "title": "Roof P3",
+      "category": "Small Works",
+      "priorityCode": "054",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "b04d982f5dd29be77353d96fd0fe52c0d675bf97dd36c0652166edd4a80d6099",
+      "facilityCode": "WC",
+      "title": "Ants",
+      "category": "Small Works",
+      "priorityCode": "021",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "139a5d45bf7d2808e3f2fd5bc6b9f5d584904bc59f1d5cb0766a469c5b4baabb",
+      "facilityCode": "EWH",
+      "title": "Softball Field Surface",
+      "category": "Small Works",
+      "priorityCode": "029",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "334e42743f54399f3a82f68902548ff0ceac4ff1e3b033475d22264a9d2c59f1",
+      "facilityCode": "CLE",
+      "title": "Field Drainage",
+      "category": "Small Works",
+      "priorityCode": "047",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "996b4835315da2a7a8a0d2fe2fe89a2de9bf7d950f0e8d023af1c479cc50847c",
+      "facilityCode": "TPE",
+      "title": "Windows & Doors",
+      "category": "Small Works",
+      "priorityCode": "079",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "f3cb0153516895297946b2c383af66688bbe00f76f1e72db462a68c19abaf0c2",
+      "facilityCode": "TPE",
+      "title": "HVAC & Boiler",
+      "category": "Small Works",
+      "priorityCode": "050",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "9d96b89f15cf686ca2db74ff2e6162a8f231ea331bd96da217f742ebe4debc44",
+      "facilityCode": "nan",
+      "title": "18 Subtotal:",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "206dc5be208973ed2e720edf5fa7291e054e3c21c20a10b4f6f7394ae2e21bb1",
+      "facilityCode": "nan",
+      "title": "2019 Completion",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "5c81c3f59d7d52af996da39e99ed429bb70377f5a8953c14c72961f6854a507e",
+      "facilityCode": "Location",
+      "title": "Project",
+      "category": "Small Works",
+      "priorityCode": "Priority",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "28f6d9e11ea03df3dcd5249861b72aa39998ede376323b7a4aeeb8aedc46a4ae",
+      "facilityCode": "CVE",
+      "title": "HVAC",
+      "category": "Small Works",
+      "priorityCode": "024",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "2c9939bc0d36c00cf3f2bdbbddc88c4e93a9c275ab6bacf62ce114c64ece0431",
+      "facilityCode": "MLE",
+      "title": "HVAC & Boiler",
+      "category": "Small Works",
+      "priorityCode": "007",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "a17bce6bd3ac1338fe68ccd8a313f56447170a219c77692c1f9f48b1219d884f",
+      "facilityCode": "WC",
+      "title": "Playground & Parking",
+      "category": "Small Works",
+      "priorityCode": "027",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "e6330d539485f6c06e68bb89fec19814513c5c782a03c88d4273e1e0d209fd8f",
+      "facilityCode": "OHE",
+      "title": "Playground & Parking",
+      "category": "Small Works",
+      "priorityCode": "078",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "1b84a8763db36e5af150e8241633be7aab0e77fe19e314f751eabbda689bce4d",
+      "facilityCode": "WWE",
+      "title": "Roof",
+      "category": "Small Works",
+      "priorityCode": "033",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "b3f72561cb0cf4b82634664f8336ce190fd984a8e3bbf7b79ce9272923cda9f1",
+      "facilityCode": "nan",
+      "title": "Security Total",
+      "category": "Small Works",
+      "priorityCode": "< click (+) to expand",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "dd27429cd7529c7e8201ceacdae3971dc89ae760e8027ef9ccfa86dd4518a877",
+      "facilityCode": "AECC",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "037",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "7b4909f5bc96c577d5f2e11ae8d63d9105a7c337e2e83131f9fd699e9fa2ac9c",
+      "facilityCode": "BEVE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "038",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "a213bf2574ccfc5cfd2fb80746097c3c1f0c01f35b1f3f36db0d5fabca5bd785",
+      "facilityCode": "BRE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "040",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "af9ed82d342a339e61e0f7c875cd9f6212848b0ed84386feb184d1e52e571dbc",
+      "facilityCode": "CPM",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "041",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "eea79b9f85e3914afec6a55a94800221345cc11cfac728247c094b5c3e44e608",
+      "facilityCode": "CVE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "042",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "c80adfe1f14c05287064238a9160aa5bec137a6cf2cbf4c8ccfb03239ce53988",
+      "facilityCode": "CWE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "043",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "fa6241b24e8c192ed2d9933ed3ada3ef3ac26e0b778b5f6e2cd729166d7c0e2b",
+      "facilityCode": "CLE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "045",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "802ae096463fb3fcc23e24be6b3741a962f0f5d4d9d6a55fef4494fa40b4b726",
+      "facilityCode": "CPE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "048",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "9b670b9018932fa8ba00baadc224e98ce5366ff2fc912e6b32ced25cf43b5807",
+      "facilityCode": "EE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "052",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "8937602de80d0f06a2b56b967f86d725a78b7f6eacfd137a833007c3570904aa",
+      "facilityCode": "EWH",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "053",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "9deb36a8d70c01645f0ba872617add2ba3eccd68a35e05fad6d19910f523f661",
+      "facilityCode": "WC",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "055",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "7d214e2496f490396531488a26935dba34a6d76c984925f4fac5b506eb050c3e",
+      "facilityCode": "HWE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "056",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "3ac1437753a6cee1cad54a4c9d28c82dff0122c0d4d8cf656ee7bee42a16d812",
+      "facilityCode": "HTE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "058",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "57087308a6ff3cc83c51dc8e90bb2ea2706352213cc79150636112d90f276c06",
+      "facilityCode": "LH",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "060",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "9a737eb992668af7f0abf2d8881f8aaa41f3f5e714c3f7f7d32785dba09b8296",
+      "facilityCode": "MWK",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "061",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "04992c066cfedbcd90977071da87e295609dcecd2f7469e865c394782054fa10",
+      "facilityCode": "BTM",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "062",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "c5df6875195c2defe94a9d36aa385a9b784698c352b27f38d7e510d3afd5842b",
+      "facilityCode": "MLE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "063",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "9ebbc6b51321786225694135018ea0876f5b565370a87c5ec494597840b68528",
+      "facilityCode": "MDE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "065",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "53a06fbbd10128971f0e16323d826f8c048eebaf1e1cd80f6efca84d76d79107",
+      "facilityCode": "MDH",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "066",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "0b4da27af89157fea4f6fb5426bae04b57930562194dfcc25c8ee3a578249b2e",
+      "facilityCode": "MM",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "067",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "64c5be20e1e25d6a4cd00860188dff5c79b5853cb1f7f49e6d31ceb590ea5155",
+      "facilityCode": "MTH",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "070",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "af4bd31c02bc3e06b7fe1449388503735b835b0b02e3743823fbd4e5bc8977f4",
+      "facilityCode": "OHE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "071",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "b579812a39f252b37e0baa98f7ce4448cae5fb15977829fa64b94317732634f4",
+      "facilityCode": "SVE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "072",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "d088e8dc4bfbac0acfa21fea6756895c373150358d756e38b6aea53abd3b0030",
+      "facilityCode": "SWE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "075",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "12ae490a66c66db50ab5d4ac785d95747e9dd4732644e280121553f4ee2fbc14",
+      "facilityCode": "TPE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "080",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "b74ef8c422c4ad005fd1ee180c23072a4009c3253db81c2c313ab930b9f5c9f1",
+      "facilityCode": "WGE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "081",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "9a737eb992668af7f0abf2d8881f8aaa41f3f5e714c3f7f7d32785dba09b8296",
+      "facilityCode": "MWK",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "082",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "18d5ec8f323037b641fbb4c6f7fa775dedefa9ffcd223527dd58fb1715dc819c",
+      "facilityCode": "WWE",
+      "title": "Security",
+      "category": "Small Works",
+      "priorityCode": "083",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "04ee1430a164709e3e53fac3d5708973fb2473af539dd7b2a71c83afd66acf4b",
+      "facilityCode": "CPE",
+      "title": "Roof",
+      "category": "Small Works",
+      "priorityCode": "025",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "09739a993af32551f7cb7285aaa295e0f011f65b34216847c9a5a64a514a634a",
+      "facilityCode": "CPE",
+      "title": "Floor",
+      "category": "Small Works",
+      "priorityCode": "034",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "f42f8e9f9ca2b71809635a11ad0d002cdd544a112a93221f5cfebc16f56897ee",
+      "facilityCode": "BTM",
+      "title": "Floor",
+      "category": "Small Works",
+      "priorityCode": "006",
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "2a05eabfdd54b157f0155116c5dd78017406dbe7338df2f6d731b7ad4b7cdc28",
+      "facilityCode": "nan",
+      "title": "Ed's Budget Reconciliation",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "4ba87943a1053861232cdb732e980d1b49af53c135b0c50a587a75973f9b2aa3",
+      "facilityCode": "nan",
+      "title": "Misc Security Expense",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "cbaa8d2c6f537da32c67eb92d39d5b00043a706efb819fd6d46cc06b5ea7c4d8",
+      "facilityCode": "nan",
+      "title": "19 Subtotal:",
+      "category": "Small Works",
+      "priorityCode": null,
+      "fundingProgram": null,
+      "notes": null
+    },
+    {
+      "importKey": "4c873527f37e8fbd4560f05cbe28f7d23306001cd0f0a8dba47cf830fca2d991",
+      "facilityCode": "DISTRICT",
+      "title": "ADA Restroom AWM,CPM, EDE and WGE",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "8e7eb0374a9c4813043ea16ee4fbfc4c0ecd10187faab822e414aefb89662d2e",
+      "facilityCode": "DISTRICT",
+      "title": "District Wide Fire Alarm Summer 2025 AWE,BRE and MLE with CO of adding HWE",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "a75ed6d6aa069c644e153351268ae8b0f434de1be3f50f54f38916f1309bcfad",
+      "facilityCode": "DISTRICT",
+      "title": "Contigency (5%)",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "e857a38b7b7e7bfd827412433c3e8fb7f73cbd30a32e8e1df5100b13eed361e3",
+      "facilityCode": "DISTRICT",
+      "title": "Custodial",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "6602a1fd5e1c546a7eda30b4434b28364d57f9f16451aa9a149849fa16dd6ec3",
+      "facilityCode": "DISTRICT",
+      "title": "District Wide Boilers (DB)",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "a75ed6d6aa069c644e153351268ae8b0f434de1be3f50f54f38916f1309bcfad",
+      "facilityCode": "DISTRICT",
+      "title": "Contigency (5%)",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "e857a38b7b7e7bfd827412433c3e8fb7f73cbd30a32e8e1df5100b13eed361e3",
+      "facilityCode": "DISTRICT",
+      "title": "Custodial",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "3f449d18aa7353408e8daf7520c9e644d0ed37729b71cbc18cbeba9d100b2fc9",
+      "facilityCode": "DISTRICT",
+      "title": "OIl Tank Decomissioning mutiple sites (11 rem sites)",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "14adcc727cea94ea0ebe1d272d82bdc8d994e99be769638ec71cb29ea2fb27c8",
+      "facilityCode": "DISTRICT",
+      "title": "construction Reserve (10%)",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "4a44dcc2e826cf22ec93c74b39897473fccd4d0f7580cfea04948bbbf80dace6",
+      "facilityCode": "DISTRICT",
+      "title": "Other",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "94307b35bab36a146d1e3d7148cd5fbd8a0dfce68bd4c9534e6c7080e2f7720e",
+      "facilityCode": "DISTRICT",
+      "title": "Pump Upgrades (Grant)",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "14adcc727cea94ea0ebe1d272d82bdc8d994e99be769638ec71cb29ea2fb27c8",
+      "facilityCode": "DISTRICT",
+      "title": "construction Reserve (10%)",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "4a44dcc2e826cf22ec93c74b39897473fccd4d0f7580cfea04948bbbf80dace6",
+      "facilityCode": "DISTRICT",
+      "title": "Other",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "aca7cb2ecd35389f3c3a6b02c0d81680dde39ac60654a3d9b4f09a7e212704b3",
+      "facilityCode": "DISTRICT",
+      "title": "CBA Baseline Adjustments / Audits",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "14adcc727cea94ea0ebe1d272d82bdc8d994e99be769638ec71cb29ea2fb27c8",
+      "facilityCode": "DISTRICT",
+      "title": "construction Reserve (10%)",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "4a44dcc2e826cf22ec93c74b39897473fccd4d0f7580cfea04948bbbf80dace6",
+      "facilityCode": "DISTRICT",
+      "title": "Other",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "88431b3f520d20865be107ea868869e8862e82ad695bdc212cb748baf31778f0",
+      "facilityCode": "DISTRICT",
+      "title": "2N Devices for 16 sites 20 total devices",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "ef03b98de7d4a94e5a896d3614a9b5ee41f4d9b62136b3e218d068e8c99e410b",
+      "facilityCode": "DISTRICT",
+      "title": "Covered Play BRE and MLE, without EDE",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "b3f3faf4afd96fbdbc4ad4702493e7c6ce6b48790ec05c851d381549ad9c0b20",
+      "facilityCode": "DISTRICT",
+      "title": "Construction Reserve (10%)",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "d5f2664be10af84b7c1df89f38bc8954bf74247a73b5c5d4115341b7b33c5621",
+      "facilityCode": "DISTRICT",
+      "title": "Bid",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "2c5cb202bb5e74fa16aa6e62423594f3e7a94f9bdadd0d3cf5e4d016b2bdeb1b",
+      "facilityCode": "DISTRICT",
+      "title": "Readerboards MTH, HWE and BVE",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "b86fa556fb54c9287f3600bfb8374b3f8df1e702d63f7542c86c1f5dd19051ee",
+      "facilityCode": "DISTRICT",
+      "title": "Permit",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "b213b5fabd07752d1f170f774c97e19bf341028ace8d6c7a2c44a1757511cb8c",
+      "facilityCode": "DISTRICT",
+      "title": "Sound Systems",
+      "category": "District Wide"
+    },
+    {
+      "importKey": "ec9cc21004d1186f242342b1fc87ab89e0a91cdd754ee5581a2f979fbbe48bd1",
+      "facilityCode": "EWH",
+      "title": "Boiler Upgrades",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "bbfe55db289b9d774b8031b3f95c340e6720b4f98af5a52fee86571ec513f5df",
+      "facilityCode": "EWH",
+      "title": "Domestic Water Pumps",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "c94ee0dbfb09c31e2cf1213dcf95d4589befdd769b1784cce1c9b6ddefa2acf3",
+      "facilityCode": "EWH",
+      "title": "Faucets",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "b7f1b99bfb76761303898091e746baac60b16ff9f23b010b33b7a8a517916e5f",
+      "facilityCode": "EWH",
+      "title": "Air Distribution system controls",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "b2bdc48ccf184783ab4f043b8cc0625d5c2d0276109000d910948829767b6e29",
+      "facilityCode": "EWH",
+      "title": "LED Lights",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "c9a151d25450d0580494351dce830c5d3bc2dceb83a98337328d4f1dfbf71f79",
+      "facilityCode": "EWH",
+      "title": "Summer Schedule",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "54f4cfed6c5be1b516712a46cf3ce44f0fe7b48cadfbc3a7112611186d04b215",
+      "facilityCode": "LWH",
+      "title": "Boiler Sequence",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "3573170d7be122f93018e658094529e29535cea84a3b85b9aa59730aea9ab6a6",
+      "facilityCode": "LWH",
+      "title": "Domestic Water Pumps",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "6a1ee22278102a5c0d7733548c474832fb57554ee0686c134284c58a4d864b9f",
+      "facilityCode": "LWH",
+      "title": "RTUs controls",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "52297812e2f8f8e17094491f75135716c245270a8a34b8fe87135ca6c80634bf",
+      "facilityCode": "LWH",
+      "title": "Exhaust Fans conrols",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "956f6369d23062aa5a0d4113c4fa91f1e27ec443b7c78e2999be4172042baeeb",
+      "facilityCode": "LWH",
+      "title": "LED Lights",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "eca42531c99e43ad4c0fe98132e3ad35bd92fba4a5c53535eb42396c50155aae",
+      "facilityCode": "LWH",
+      "title": "Summer Schedule",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "4167945dcc67a9a9912b6ce20b640fadad07b23dffe7373cbc8d44d2d4d91e23",
+      "facilityCode": "MDH",
+      "title": "Boiler Upgrades",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "ecd0be95083eb4dff646a6bf80c7df1720df98d5a84fdf7e46773c3aab2cebc9",
+      "facilityCode": "MDH",
+      "title": "Domestic Water Pumps",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "d6857a00d00a46852a84d6fdcd9d539caab730c1a8172373914899f0728b7554",
+      "facilityCode": "MDH",
+      "title": "Faucets",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "a1b2246ef5d52abcc164d24b2426f90fe9c7feb0a5f06f34d49beef7bbcfb8fb",
+      "facilityCode": "MDH",
+      "title": "Air Distribution system controls",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "2416931f61c5fc850ca68ceb122b68c9c42b90a81b559d5eda3e16435065d5d8",
+      "facilityCode": "MDH",
+      "title": "LED Lights",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "3e0ff2b6d18120879623ffaeb752118bf8f36a2f2f5ef412814539600a0cdc2b",
+      "facilityCode": "MDH",
+      "title": "Summer Schedule",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "e53ba62dffcb8aa6b201fe6b0f96093aa3f51c0cc12f563d1466b8a115f638a7",
+      "facilityCode": "Site",
+      "title": "Project",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "055c4459efc2b2e562dcc0c057f2d15e775ef19235d920392b9265b97d196bfa",
+      "facilityCode": "WWC",
+      "title": "Boiler Upgrades",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "3b93e7f1fc8ab7028113e428332b373284d00a6c7dba745150aa5b932eb9225d",
+      "facilityCode": "WWC",
+      "title": "Domestic Water Pumps",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "7c23452356fb20464097f520e6620571cf8e041a5672af49c1c1712a762b62e1",
+      "facilityCode": "WWC",
+      "title": "Faucets",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "f95f4d4e99b48f44fcb08806fc1d5415a767fdf8cb14dc116d7eeef11649d0a7",
+      "facilityCode": "WWC",
+      "title": "Air Distribution Hardware",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "66a08cce476a8460b0ed8a88cda6bfcca8ffcabcc3e0412ea6e79be2ce5952de",
+      "facilityCode": "WWC",
+      "title": "LED Lights",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "56d9fa2e5a61a8851dc62713d06ebb4a12edb66a19948a21981d3dc377699966",
+      "facilityCode": "WWC",
+      "title": "Summer Schedule",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "00177a4a58337e0acba812a4e89d5e42b8e69541ae752f26d99c9a90e7a0bc48",
+      "facilityCode": "WWC",
+      "title": "???",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "82b55b2e0ef673ad6002ffe039f2dd37afa1692935f7ce76e9efcb4af48373f6",
+      "facilityCode": "BTM",
+      "title": "Boiler Upgrades",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "9804256aebe3cd39ffdd8796acc593b232a865d651978146c56f6103cabfb093",
+      "facilityCode": "MWK8",
+      "title": "Boiler Upgrades",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "9ee35f83d65c5a6f59e4ffd43006393a2e8064f7192c3d53d76ea6a13fa8b18c",
+      "facilityCode": "TPE",
+      "title": "Domestic Water Pumps",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "7f9012a1a83535e6d04c462506abf5ede6c43e69a0887a3583905f00f8e832b1",
+      "facilityCode": "CVE",
+      "title": "Water Heaters",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "e6e05e165f4e51340f613fd375c9262544279fb91328ba7cb05bf324dfacab4a",
+      "facilityCode": "CLE",
+      "title": "Boiler Upgrades",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "fe2aaf898b3654077179dcd3facc2b40ec8e0cf79732bed2a1c53470f03274dd",
+      "facilityCode": "MLE",
+      "title": "Boiler Upgrades",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "0818a3ee90e4f1799e068ffe877de90cfbe7aaa3d1e90296fd557f262c66eebc",
+      "facilityCode": "Maint",
+      "title": "Domestic Water Pumps",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "b17d3d4ebb71159373b87bd3855d6a16bc5058091ca0b403f79905f14d51bb3e",
+      "facilityCode": "ESC",
+      "title": "???",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    },
+    {
+      "importKey": "96de86da46782cd70cd65840e69be3f70165da292e29225c4443d97020135243",
+      "facilityCode": "ALL OTHERS",
+      "title": "Faucets total",
+      "category": "Energy Efficiency",
+      "fundingProgram": null,
+      "status": null
+    }
+  ],
+  "budgets": [
+    {
+      "projectImportKey": "4c873527f37e8fbd4560f05cbe28f7d23306001cd0f0a8dba47cf830fca2d991",
+      "approvedBudgetTotal": 109494.0,
+      "baseBidPlusAlts": 80000.0,
+      "changeOrdersTotal": 10000.0,
+      "salesTaxRatePercent": 10.6,
+      "constructionCostSubtotal": 99540.0,
+      "cpoManagementRatePercent": 10.0,
+      "techMisc": 0.0,
+      "consultants": 0.0,
+      "otherCostSubtotal": 9954.0,
+      "totalProjectCost": 109494.0,
+      "remainder": 0.0
+    },
+    {
+      "projectImportKey": "8e7eb0374a9c4813043ea16ee4fbfc4c0ecd10187faab822e414aefb89662d2e",
+      "approvedBudgetTotal": 1590000.0,
+      "baseBidPlusAlts": 698280.0,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": null,
+      "constructionCostSubtotal": null,
+      "cpoManagementRatePercent": null,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": null,
+      "totalProjectCost": null,
+      "remainder": null
+    },
+    {
+      "projectImportKey": "a75ed6d6aa069c644e153351268ae8b0f434de1be3f50f54f38916f1309bcfad",
+      "approvedBudgetTotal": null,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": 10.6,
+      "constructionCostSubtotal": 1199527.448,
+      "cpoManagementRatePercent": 5.0,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": null,
+      "totalProjectCost": null,
+      "remainder": null
+    },
+    {
+      "projectImportKey": "e857a38b7b7e7bfd827412433c3e8fb7f73cbd30a32e8e1df5100b13eed361e3",
+      "approvedBudgetTotal": null,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": null,
+      "constructionCostSubtotal": null,
+      "cpoManagementRatePercent": null,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": 129976.3724,
+      "totalProjectCost": 1329503.82,
+      "remainder": 260496.1796
+    },
+    {
+      "projectImportKey": "6602a1fd5e1c546a7eda30b4434b28364d57f9f16451aa9a149849fa16dd6ec3",
+      "approvedBudgetTotal": 12900000.0,
+      "baseBidPlusAlts": 8000000.0,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": null,
+      "constructionCostSubtotal": null,
+      "cpoManagementRatePercent": null,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": null,
+      "totalProjectCost": null,
+      "remainder": null
+    },
+    {
+      "projectImportKey": "a75ed6d6aa069c644e153351268ae8b0f434de1be3f50f54f38916f1309bcfad",
+      "approvedBudgetTotal": null,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": 10.4,
+      "constructionCostSubtotal": 10117760.0,
+      "cpoManagementRatePercent": 5.0,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": null,
+      "totalProjectCost": null,
+      "remainder": null
+    },
+    {
+      "projectImportKey": "e857a38b7b7e7bfd827412433c3e8fb7f73cbd30a32e8e1df5100b13eed361e3",
+      "approvedBudgetTotal": null,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": null,
+      "constructionCostSubtotal": null,
+      "cpoManagementRatePercent": null,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": 1995888.0,
+      "totalProjectCost": 12113648.0,
+      "remainder": 786352.0
+    },
+    {
+      "projectImportKey": "3f449d18aa7353408e8daf7520c9e644d0ed37729b71cbc18cbeba9d100b2fc9",
+      "approvedBudgetTotal": 0.0,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": null,
+      "constructionCostSubtotal": null,
+      "cpoManagementRatePercent": null,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": null,
+      "totalProjectCost": null,
+      "remainder": null
+    },
+    {
+      "projectImportKey": "14adcc727cea94ea0ebe1d272d82bdc8d994e99be769638ec71cb29ea2fb27c8",
+      "approvedBudgetTotal": null,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": 10.5,
+      "constructionCostSubtotal": 668525.0,
+      "cpoManagementRatePercent": 8.0,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": null,
+      "totalProjectCost": null,
+      "remainder": null
+    },
+    {
+      "projectImportKey": "4a44dcc2e826cf22ec93c74b39897473fccd4d0f7580cfea04948bbbf80dace6",
+      "approvedBudgetTotal": null,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": null,
+      "constructionCostSubtotal": null,
+      "cpoManagementRatePercent": null,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": 113482.0,
+      "totalProjectCost": 782007.0,
+      "remainder": -782007.0
+    },
+    {
+      "projectImportKey": "94307b35bab36a146d1e3d7148cd5fbd8a0dfce68bd4c9534e6c7080e2f7720e",
+      "approvedBudgetTotal": 191250.0,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": null,
+      "constructionCostSubtotal": null,
+      "cpoManagementRatePercent": null,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": null,
+      "totalProjectCost": null,
+      "remainder": null
+    },
+    {
+      "projectImportKey": "14adcc727cea94ea0ebe1d272d82bdc8d994e99be769638ec71cb29ea2fb27c8",
+      "approvedBudgetTotal": null,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": 10.5,
+      "constructionCostSubtotal": 85085.0,
+      "cpoManagementRatePercent": 8.0,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": null,
+      "totalProjectCost": null,
+      "remainder": null
+    },
+    {
+      "projectImportKey": "4a44dcc2e826cf22ec93c74b39897473fccd4d0f7580cfea04948bbbf80dace6",
+      "approvedBudgetTotal": null,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": null,
+      "constructionCostSubtotal": null,
+      "cpoManagementRatePercent": null,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": 32016.8,
+      "totalProjectCost": 117101.8,
+      "remainder": 74148.2
+    },
+    {
+      "projectImportKey": "aca7cb2ecd35389f3c3a6b02c0d81680dde39ac60654a3d9b4f09a7e212704b3",
+      "approvedBudgetTotal": 1750000.0,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": null,
+      "constructionCostSubtotal": null,
+      "cpoManagementRatePercent": null,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": null,
+      "totalProjectCost": null,
+      "remainder": null
+    },
+    {
+      "projectImportKey": "14adcc727cea94ea0ebe1d272d82bdc8d994e99be769638ec71cb29ea2fb27c8",
+      "approvedBudgetTotal": null,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": 10.5,
+      "constructionCostSubtotal": 1456920.4,
+      "cpoManagementRatePercent": 15.0,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": null,
+      "totalProjectCost": null,
+      "remainder": null
+    },
+    {
+      "projectImportKey": "4a44dcc2e826cf22ec93c74b39897473fccd4d0f7580cfea04948bbbf80dace6",
+      "approvedBudgetTotal": null,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": null,
+      "constructionCostSubtotal": null,
+      "cpoManagementRatePercent": null,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": 142538.06,
+      "totalProjectCost": 1599458.46,
+      "remainder": 150541.54
+    },
+    {
+      "projectImportKey": "88431b3f520d20865be107ea868869e8862e82ad695bdc212cb748baf31778f0",
+      "approvedBudgetTotal": 117864.45,
+      "baseBidPlusAlts": 77000.0,
+      "changeOrdersTotal": 10000.0,
+      "salesTaxRatePercent": 10.5,
+      "constructionCostSubtotal": 96135.0,
+      "cpoManagementRatePercent": 7.0,
+      "techMisc": 5000.0,
+      "consultants": 10000.0,
+      "otherCostSubtotal": 21729.45,
+      "totalProjectCost": 117864.45,
+      "remainder": 0.0
+    },
+    {
+      "projectImportKey": "ef03b98de7d4a94e5a896d3614a9b5ee41f4d9b62136b3e218d068e8c99e410b",
+      "approvedBudgetTotal": 3748848.75,
+      "baseBidPlusAlts": 1455776.0,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": null,
+      "constructionCostSubtotal": null,
+      "cpoManagementRatePercent": null,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": null,
+      "totalProjectCost": null,
+      "remainder": null
+    },
+    {
+      "projectImportKey": "b3f3faf4afd96fbdbc4ad4702493e7c6ce6b48790ec05c851d381549ad9c0b20",
+      "approvedBudgetTotal": null,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": 10.6,
+      "constructionCostSubtotal": 1644628.149,
+      "cpoManagementRatePercent": 8.0,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": null,
+      "totalProjectCost": null,
+      "remainder": null
+    },
+    {
+      "projectImportKey": "d5f2664be10af84b7c1df89f38bc8954bf74247a73b5c5d4115341b7b33c5621",
+      "approvedBudgetTotal": null,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": null,
+      "constructionCostSubtotal": null,
+      "cpoManagementRatePercent": null,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": 1080602.102,
+      "totalProjectCost": 2725230.251,
+      "remainder": 1023618.499
+    },
+    {
+      "projectImportKey": "2c5cb202bb5e74fa16aa6e62423594f3e7a94f9bdadd0d3cf5e4d016b2bdeb1b",
+      "approvedBudgetTotal": 194656.0,
+      "baseBidPlusAlts": 63000.0,
+      "changeOrdersTotal": 25000.0,
+      "salesTaxRatePercent": 10.6,
+      "constructionCostSubtotal": 97328.0,
+      "cpoManagementRatePercent": 10.0,
+      "techMisc": null,
+      "consultants": null,
+      "otherCostSubtotal": null,
+      "totalProjectCost": null,
+      "remainder": null
+    },
+    {
+      "projectImportKey": "b86fa556fb54c9287f3600bfb8374b3f8df1e702d63f7542c86c1f5dd19051ee",
+      "approvedBudgetTotal": null,
+      "baseBidPlusAlts": null,
+      "changeOrdersTotal": null,
+      "salesTaxRatePercent": null,
+      "constructionCostSubtotal": null,
+      "cpoManagementRatePercent": null,
+      "techMisc": null,
+      "consultants": 0.0,
+      "otherCostSubtotal": 9732.8,
+      "totalProjectCost": 107060.8,
+      "remainder": 87595.2
+    },
+    {
+      "projectImportKey": "b213b5fabd07752d1f170f774c97e19bf341028ace8d6c7a2c44a1757511cb8c",
+      "approvedBudgetTotal": 501847.5,
+      "baseBidPlusAlts": 375000.0,
+      "changeOrdersTotal": 37500.0,
+      "salesTaxRatePercent": 10.6,
+      "constructionCostSubtotal": 456225.0,
+      "cpoManagementRatePercent": 10.0,
+      "techMisc": 0.0,
+      "consultants": 0.0,
+      "otherCostSubtotal": 45622.5,
+      "totalProjectCost": 501847.5,
+      "remainder": 0.0
+    }
+  ],
+  "estimates": [],
+  "attachments": []
+}

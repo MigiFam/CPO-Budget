@@ -1,0 +1,588 @@
+// This is your Prisma schema file
+// Learn more: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================
+// CORE ENTITIES
+// ============================================
+
+model Organization {
+  id        String   @id @default(uuid())
+  name      String
+  address   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  users          User[]
+  facilities     Facility[]
+  fundingSources FundingSource[]
+  projects       Project[]
+  vendors        Vendor[]
+  attachments    Attachment[]
+  auditLogs      AuditLog[]
+
+  @@map("organizations")
+}
+
+model User {
+  id             String     @id @default(uuid())
+  email          String     @unique
+  name           String
+  passwordHash   String
+  role           UserRole
+  status         UserStatus @default(ACTIVE)
+  organizationId String
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+
+  organization     Organization   @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  managedProjects  Project[]      @relation("ProjectManager")
+  teamMemberships  TeamMember[]
+  comments         Comment[]
+  issues           Issue[]        @relation("IssueAssignee")
+  createdIssues    Issue[]        @relation("IssueCreator")
+  attachments      Attachment[]
+  auditLogs        AuditLog[]
+  costEventsCreated CostEvent[]   @relation("CostEventCreator")
+  costEventsApproved CostEvent[]  @relation("CostEventApprover")
+  approvedTransactions Transaction[] @relation("TransactionApprover")
+
+  @@index([organizationId])
+  @@index([email])
+  @@index([role])
+  @@map("users")
+}
+
+enum UserRole {
+  DIRECTOR
+  PROJECT_MANAGER
+  TEAM_MEMBER
+  FINANCE
+  CONTRACTOR
+  VIEWER
+  AUDITOR
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+  PENDING
+}
+
+// ============================================
+// FACILITIES & FUNDING
+// ============================================
+
+model Facility {
+  id             String       @id @default(uuid())
+  organizationId String
+  name           String
+  type           FacilityType
+  address        String?
+  region         String?      // e.g., "Lynnwood", "Edmonds", "Sno. Co.", etc.
+  code           String?      // e.g., "EWH", "MDH", "HWE" - facility abbreviation codes
+  jurisdiction   String?      // Added: "Lynnwood", "Edmonds", "Sno. Co.", "Mt. Lake Terrace", "Brier", "Varies"
+  taxRatePercent Decimal?     @db.Decimal(5, 3) // Default sales tax rate (e.g., 10.6 for 10.6%)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  projects     Project[]
+
+  @@index([organizationId])
+  @@index([type])
+  @@index([code])
+  @@index([jurisdiction])
+  @@map("facilities")
+}
+
+enum FacilityType {
+  SCHOOL
+  FACILITY
+  ADMINISTRATIVE
+  OTHER
+}
+
+model FundingSource {
+  id             String             @id @default(uuid())
+  organizationId String
+  name           String             // e.g., "2024 Bond", "2024 Levy", "2021 Levy"
+  type           FundingSourceType
+  code           String?            // e.g., "2024-BOND"
+  year           Int?               // Added: e.g., 2024, 2021, 2016
+  totalAllocation Decimal?          @db.Decimal(15, 2) // Added: Total allocated amount for this funding source
+  startDate      DateTime?
+  endDate        DateTime?
+  createdAt      DateTime           @default(now())
+  updatedAt      DateTime           @updatedAt
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  projects     Project[]
+
+  @@index([organizationId])
+  @@index([type])
+  @@index([year])
+  @@map("funding_sources")
+}
+
+enum FundingSourceType {
+  BOND
+  LEVY
+  GRANT
+  OTHER
+}
+
+// ============================================
+// PROJECTS & BUDGETS
+// ============================================
+
+model Project {
+  id               String        @id @default(uuid())
+  organizationId   String
+  facilityId       String
+  fundingSourceId  String
+  name             String
+  type             ProjectType
+  status           ProjectStatus @default(PLANNED)
+  priority         Int?          // Added: priority number from CSV (001, 002, etc.)
+  description      String?       @db.Text
+  completionYear   Int?          // Added: target completion year (2025, 2026, etc.)
+  startDate        DateTime?
+  endDate          DateTime?
+  estimatedDate    String?       // Added: date estimate string like "1/14/2025 est", "9/10/2025 Final"
+  projectManagerId String?
+  jurisdiction     String?       // Added: copied from facility but can be overridden
+  notes            String?       @db.Text // Added: project notes field
+  
+  // CSV Import System fields
+  category         String?       // 'Small Works' | 'District Wide' | 'Energy Efficiency'
+  fundingProgram   String?       // '2024 Bond' | '2024 Levy' | 'Grant' | 'Maint' | 'Other'
+  importKey        String?       @unique // SHA256 hash for idempotent imports
+  
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+
+  organization   Organization  @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  facility       Facility      @relation(fields: [facilityId], references: [id])
+  fundingSource  FundingSource @relation(fields: [fundingSourceId], references: [id])
+  projectManager User?         @relation("ProjectManager", fields: [projectManagerId], references: [id])
+
+  budgets    Budget[]    // Changed to array to support multiple budget versions
+  costEvents CostEvent[]
+  teams      Team[]
+  comments   Comment[]
+  issues     Issue[]
+  
+  // CSV Import System relations
+  projectBudgets     ProjectBudget[]
+  estimates          ProjectEstimate[]
+  fundingAllocations FundingAllocation[]
+  transactions       Transaction[]
+
+  @@index([organizationId])
+  @@index([facilityId])
+  @@index([fundingSourceId])
+  @@index([projectManagerId])
+  @@index([status])
+  @@index([type])
+  @@index([completionYear])
+  @@index([priority])
+  @@map("projects")
+}
+
+enum ProjectType {
+  SMALL_WORKS
+  MAJOR
+}
+
+enum ProjectStatus {
+  PLANNED
+  ACTIVE
+  ON_HOLD
+  CLOSED
+}
+
+model Budget {
+  id                    String   @id @default(uuid())
+  projectId             String   // Changed from @unique to allow multiple budgets per project
+  version               String   @default("current") // Added: "allocation", "board_approved", "current_estimate"
+  
+  // Budget amounts matching CSV structure
+  levyAllocation        Decimal? @db.Decimal(15, 2) // Added: "2024 Levy Allocation" column
+  boardApprovedBudget   Decimal? @db.Decimal(15, 2) // Added: "Board Approved Budget" column
+  mostCurrentEstimate   Decimal? @db.Decimal(15, 2) // Added: "Most Current Estimate" column
+  
+  baselineAmount        Decimal  @default(0) @db.Decimal(15, 2) // Primary baseline
+  revisedAmount         Decimal  @default(0) @db.Decimal(15, 2)
+  contingencyAmount     Decimal  @default(0) @db.Decimal(15, 2)
+  committedToDate       Decimal  @default(0) @db.Decimal(15, 2)
+  actualsToDate         Decimal  @default(0) @db.Decimal(15, 2)
+  forecastAtCompletion  Decimal  @default(0) @db.Decimal(15, 2)
+  
+  // Variance calculations
+  variance              Decimal  @default(0) @db.Decimal(15, 2)
+  boardBudgetRemainder  Decimal? @db.Decimal(15, 2) // Added: from CSV
+  levyAllocationRemainder Decimal? @db.Decimal(15, 2) // Added: from CSV
+  
+  currency              String   @default("USD")
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+
+  project      Project      @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  budgetLines  BudgetLine[]
+
+  @@index([projectId])
+  @@index([version])
+  @@map("budgets")
+}
+
+model BudgetLine {
+  id             String              @id @default(uuid())
+  budgetId       String
+  costCode       String
+  category       BudgetLineCategory
+  description    String
+  baseline       Decimal             @default(0) @db.Decimal(15, 2)
+  revisionsTotal Decimal             @default(0) @db.Decimal(15, 2)
+  committed      Decimal             @default(0) @db.Decimal(15, 2)
+  actuals        Decimal             @default(0) @db.Decimal(15, 2)
+  forecast       Decimal             @default(0) @db.Decimal(15, 2)
+  variance       Decimal             @default(0) @db.Decimal(15, 2)
+  tags           String[]            @default([])
+  createdAt      DateTime            @default(now())
+  updatedAt      DateTime            @updatedAt
+
+  budget     Budget      @relation(fields: [budgetId], references: [id], onDelete: Cascade)
+  costEvents CostEvent[]
+
+  @@index([budgetId])
+  @@index([costCode])
+  @@index([category])
+  @@map("budget_lines")
+}
+
+enum BudgetLineCategory {
+  LABOR
+  MATERIALS
+  EQUIPMENT
+  PERMITS
+  DESIGN
+  CONTINGENCY
+  OTHER
+}
+
+// ============================================
+// COST TRACKING
+// ============================================
+
+model CostEvent {
+  id                   String           @id @default(uuid())
+  projectId            String
+  type                 CostEventType
+  vendorId             String?
+  amount               Decimal          @db.Decimal(15, 2)
+  tax                  Decimal          @default(0) @db.Decimal(15, 2)
+  date                 DateTime
+  status               CostEventStatus  @default(DRAFT)
+  relatedBudgetLineId  String?
+  attachmentId         String?
+  description          String?          @db.Text
+  createdById          String
+  approvedById         String?
+  approvedAt           DateTime?
+  createdAt            DateTime         @default(now())
+  updatedAt            DateTime         @updatedAt
+
+  project           Project     @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  vendor            Vendor?     @relation(fields: [vendorId], references: [id])
+  relatedBudgetLine BudgetLine? @relation(fields: [relatedBudgetLineId], references: [id])
+  attachment        Attachment? @relation(fields: [attachmentId], references: [id])
+  createdBy         User        @relation("CostEventCreator", fields: [createdById], references: [id])
+  approvedBy        User?       @relation("CostEventApprover", fields: [approvedById], references: [id])
+
+  @@index([projectId])
+  @@index([type])
+  @@index([status])
+  @@index([date])
+  @@index([vendorId])
+  @@map("cost_events")
+}
+
+enum CostEventType {
+  PO
+  INVOICE
+  CHANGE_ORDER
+  TRANSFER
+  CREDIT
+}
+
+enum CostEventStatus {
+  DRAFT
+  SUBMITTED
+  APPROVED
+  DENIED
+  PAID
+}
+
+model Vendor {
+  id             String   @id @default(uuid())
+  organizationId String
+  name           String
+  contact        String?
+  taxId          String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  costEvents   CostEvent[]
+  transactions Transaction[]
+
+  @@index([organizationId])
+  @@map("vendors")
+}
+
+// ============================================
+// COLLABORATION
+// ============================================
+
+model Team {
+  id        String   @id @default(uuid())
+  projectId String
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  project Project      @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  members TeamMember[]
+
+  @@index([projectId])
+  @@map("teams")
+}
+
+model TeamMember {
+  id         String   @id @default(uuid())
+  teamId     String
+  userId     String
+  roleOnTeam String?
+  createdAt  DateTime @default(now())
+
+  team Team @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([teamId, userId])
+  @@index([teamId])
+  @@index([userId])
+  @@map("team_members")
+}
+
+model Comment {
+  id         String            @id @default(uuid())
+  projectId  String
+  authorId   String
+  body       String            @db.Text
+  visibility CommentVisibility @default(TEAM)
+  createdAt  DateTime          @default(now())
+  updatedAt  DateTime          @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  author  User    @relation(fields: [authorId], references: [id], onDelete: Cascade)
+
+  @@index([projectId])
+  @@index([authorId])
+  @@map("comments")
+}
+
+enum CommentVisibility {
+  INTERNAL
+  TEAM
+  ORG
+}
+
+model Issue {
+  id          String      @id @default(uuid())
+  projectId   String
+  title       String
+  description String      @db.Text
+  status      IssueStatus @default(OPEN)
+  assigneeId  String?
+  dueDate     DateTime?
+  createdById String
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  assignee  User?   @relation("IssueAssignee", fields: [assigneeId], references: [id])
+  createdBy User    @relation("IssueCreator", fields: [createdById], references: [id])
+
+  @@index([projectId])
+  @@index([status])
+  @@index([assigneeId])
+  @@map("issues")
+}
+
+enum IssueStatus {
+  OPEN
+  IN_PROGRESS
+  RESOLVED
+  CLOSED
+}
+
+// ============================================
+// FILES & AUDIT
+// ============================================
+
+model Attachment {
+  id        String   @id @default(uuid())
+  orgId     String
+  url       String
+  fileName  String
+  mimeType  String
+  size      Int
+  createdById String
+  projectId String?
+  createdAt DateTime @default(now())
+
+  organization Organization @relation(fields: [orgId], references: [id], onDelete: Cascade)
+  createdBy    User         @relation(fields: [createdById], references: [id])
+  costEvents   CostEvent[]
+
+  @@index([orgId])
+  @@index([projectId])
+  @@map("attachments")
+}
+
+model AuditLog {
+  id             String      @id @default(uuid())
+  organizationId String
+  actorId        String
+  entity         String
+  entityId       String
+  action         AuditAction
+  diffJSON       Json?
+  createdAt      DateTime    @default(now())
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  actor        User         @relation(fields: [actorId], references: [id])
+
+  @@index([organizationId])
+  @@index([actorId])
+  @@index([entity])
+  @@index([entityId])
+  @@index([createdAt])
+  @@map("audit_logs")
+}
+
+enum AuditAction {
+  CREATE
+  UPDATE
+  DELETE
+  APPROVE
+  DENY
+  SUBMIT
+}
+
+// ============================================
+// CSV IMPORT SYSTEM MODELS
+// ============================================
+
+model ProjectBudget {
+  id                         String   @id @default(uuid())
+  projectId                  String
+  project                    Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  
+  asOfDate                   DateTime?
+  
+  // Input fields (user/import provided)
+  approvedBudgetTotal        Decimal?  @db.Decimal(15, 2)  // "Total Approved Project Budget"
+  baseBidPlusAlts            Decimal?  @db.Decimal(15, 2)  // "Base Bid Plus Alts"
+  changeOrdersTotal          Decimal?  @db.Decimal(15, 2)  // "Change orders"
+  salesTaxRatePercent        Decimal?  @db.Decimal(5, 3)   // From "Sales Tax (10.6%)"
+  cpoManagementRatePercent   Decimal?  @db.Decimal(5, 3)   // From "CPO Management (10%)"
+  techMisc                   Decimal?  @db.Decimal(15, 2)  // "Tech Misc Stuff"
+  consultants                Decimal?  @db.Decimal(15, 2)  // "Consultants"
+  
+  // Computed fields (server-side only)
+  salesTaxAmount             Decimal?  @db.Decimal(15, 2)  // Computed
+  constructionCostSubtotal   Decimal?  @db.Decimal(15, 2)  // Computed
+  cpoManagementAmount        Decimal?  @db.Decimal(15, 2)  // Computed
+  otherCostSubtotal          Decimal?  @db.Decimal(15, 2)  // Computed
+  totalProjectCost           Decimal?  @db.Decimal(15, 2)  // Computed
+  remainder                  Decimal?  @db.Decimal(15, 2)  // Computed
+  
+  createdAt                  DateTime @default(now())
+  updatedAt                  DateTime @updatedAt
+  
+  @@index([projectId])
+  @@index([asOfDate])
+  @@map("project_budgets")
+}
+
+model ProjectEstimate {
+  id            String   @id @default(uuid())
+  projectId     String
+  project       Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  
+  estimatedCost Decimal  @db.Decimal(15, 2)
+  estimateType  String   // 'SmallWorksEstimate' | 'EnergyEfficiencyEstimate' | 'Internal' | 'Vendor'
+  asOfDate      DateTime?
+  notes         String?  @db.Text
+  
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  @@index([projectId])
+  @@index([estimateType])
+  @@map("project_estimates")
+}
+
+model FundingAllocation {
+  id        String   @id @default(uuid())
+  projectId String
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  
+  source    String   // 'Bond' | 'Levy' | 'Grant' | 'Maint' | 'Other'
+  year      Int?     // e.g., 2024, 2021
+  amount    Decimal  @db.Decimal(15, 2)
+  memo      String?  @db.Text
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@index([projectId])
+  @@index([source])
+  @@map("funding_allocations")
+}
+
+model Transaction {
+  id        String   @id @default(uuid())
+  projectId String
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  
+  kind      String   // 'ChangeOrder' | 'Payment' | 'Adjustment' | 'Credit'
+  amount    Decimal  @db.Decimal(15, 2)
+  memo      String?  @db.Text
+  date      DateTime
+  
+  // Optional references
+  vendorId  String?
+  vendor    Vendor?  @relation(fields: [vendorId], references: [id])
+  
+  approvedBy  String?
+  approver    User?  @relation("TransactionApprover", fields: [approvedBy], references: [id])
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@index([projectId])
+  @@index([kind])
+  @@index([date])
+  @@map("transactions")
+}
