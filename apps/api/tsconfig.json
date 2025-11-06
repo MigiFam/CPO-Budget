@@ -9,8 +9,13 @@
     "noUnusedParameters": false,
     "strict": false,
     "skipLibCheck": true,
-    "noEmitOnError": false
+    "noEmitOnError": false,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "scripts", "prisma"]
+  "exclude": ["node_modules", "dist", "scripts", "prisma"],
+  "ts-node": {
+    "transpileOnly": true
+  }
 }
