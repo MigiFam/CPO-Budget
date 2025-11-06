@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "prisma generate && npx tsc --noEmitOnError false || npx tsc",
+    "build": "prisma generate && esbuild src/index.ts --bundle --platform=node --outdir=dist --format=cjs --external:@prisma/client --external:express --external:cors --external:dotenv --external:bcrypt --external:jsonwebtoken --external:zod --external:express-session --external:@cpo/types --external:bcryptjs --external:helmet --external:morgan --external:passport --external:passport-jwt --external:ws --external:express-rate-limit",
     "start": "node dist/index.js",
     "lint": "eslint src --ext .ts",
     "test": "vitest",
@@ -44,6 +44,7 @@
     "@types/passport": "^1.0.16",
     "@types/passport-jwt": "^4.0.0",
     "@types/ws": "^8.5.10",
+    "esbuild": "^0.19.12",
     "prisma": "^5.8.1",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3",
