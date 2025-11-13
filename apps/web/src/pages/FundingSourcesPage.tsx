@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { DollarSign, Calendar, FolderKanban, TrendingUp, Plus, Pencil, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 import { api } from '../lib/api';
 import type { FundingSource } from '@cpo/types';
@@ -228,54 +229,64 @@ export function FundingSourcesPage() {
         {paginatedSources.map((source) => (
           <div
             key={source.id}
-            className="bg-white border rounded-lg p-6 hover:shadow-md transition-shadow"
+            className="bg-white border rounded-lg hover:shadow-lg transition-shadow group relative"
           >
-            <div className="flex items-start justify-between mb-4">
-              <div className="flex-1">
-                <h3 className="font-semibold text-lg mb-2">{source.name}</h3>
-                <div className="flex items-center gap-2">
-                  <span
-                    className={`px-2 py-1 rounded text-xs font-medium ${getTypeColor(
-                      source.type
-                    )}`}
+            {/* Action Buttons */}
+            {(canEdit || canDelete) && (
+              <div className="absolute top-4 right-4 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity z-10">
+                {canEdit && (
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      setEditingFundingSource(source);
+                    }}
+                    className="p-2 bg-white text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded shadow-sm border transition-colors"
+                    title="Edit funding source"
                   >
-                    {source.type}
-                  </span>
-                  {source.code && (
-                    <span className="px-2 py-1 rounded bg-gray-100 text-gray-700 text-xs font-mono">
-                      {source.code}
-                    </span>
-                  )}
-                </div>
+                    <Pencil className="w-4 h-4" />
+                  </button>
+                )}
+                {canDelete && (
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      setDeletingFundingSource(source);
+                    }}
+                    className="p-2 bg-white text-gray-500 hover:text-red-600 hover:bg-red-50 rounded shadow-sm border transition-colors"
+                    title="Delete funding source"
+                  >
+                    <Trash2 className="w-4 h-4" />
+                  </button>
+                )}
               </div>
-              <div className="flex items-center gap-2">
-                {(canEdit || canDelete) && (
-                  <div className="flex gap-1">
-                    {canEdit && (
-                      <button
-                        onClick={() => setEditingFundingSource(source)}
-                        className="p-2 text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors"
-                        title="Edit funding source"
-                      >
-                        <Pencil className="w-4 h-4" />
-                      </button>
-                    )}
-                    {canDelete && (
-                      <button
-                        onClick={() => setDeletingFundingSource(source)}
-                        className="p-2 text-gray-500 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
-                        title="Delete funding source"
-                      >
-                        <Trash2 className="w-4 h-4" />
-                      </button>
+            )}
+
+            {/* Clickable Card Content */}
+            <Link to={`/funding-sources/${source.id}`} className="block p-6">
+              <div className="flex items-start justify-between mb-4">
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg mb-2 group-hover:text-blue-600 transition-colors">{source.name}</h3>
+                  <div className="flex items-center gap-2">
+                    <span
+                      className={`px-2 py-1 rounded text-xs font-medium ${getTypeColor(
+                        source.type
+                      )}`}
+                    >
+                      {source.type}
+                    </span>
+                    {source.code && (
+                      <span className="px-2 py-1 rounded bg-gray-100 text-gray-700 text-xs font-mono">
+                        {source.code}
+                      </span>
                     )}
                   </div>
-                )}
+                </div>
                 <div className="p-3 bg-blue-50 rounded-lg">
                   <DollarSign className="w-6 h-6 text-blue-600" />
                 </div>
               </div>
-            </div>
 
             <div className="space-y-3">
               {source.totalAllocation && (
@@ -332,6 +343,7 @@ export function FundingSourcesPage() {
                 </div>
               )}
             </div>
+            </Link>
           </div>
         ))}
       </div>
