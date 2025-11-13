@@ -1,11 +1,13 @@
 import { Outlet, Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '@/store/authStore';
 import { Button } from './ui/Button';
-import { LogOut, LayoutDashboard, Building2, DollarSign, FolderKanban } from 'lucide-react';
+import { LogOut, LayoutDashboard, Building2, DollarSign, FolderKanban, Menu, X } from 'lucide-react';
+import { useState } from 'react';
 
 export function Layout() {
   const { user, logout } = useAuthStore();
   const navigate = useNavigate();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleLogout = () => {
     logout();
@@ -21,6 +23,7 @@ export function Layout() {
             <Link to="/" className="text-xl font-bold text-primary">
               CPO Budgets
             </Link>
+            {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-4">
               <Link to="/" className="text-sm hover:text-primary">
                 <LayoutDashboard className="inline w-4 h-4 mr-1" />
@@ -41,6 +44,15 @@ export function Layout() {
             </nav>
           </div>
           <div className="flex items-center gap-3">
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden p-2 hover:bg-gray-100 rounded-md"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+            
             <div className="text-sm text-right hidden sm:block">
               <div className="font-medium">{user?.name}</div>
               <div className="text-xs text-muted-foreground">{user?.role}</div>
@@ -50,6 +62,52 @@ export function Layout() {
             </Button>
           </div>
         </div>
+
+        {/* Mobile Navigation */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t bg-white">
+            <nav className="container mx-auto px-4 py-4 flex flex-col gap-2">
+              <Link 
+                to="/" 
+                className="flex items-center gap-2 px-3 py-2 text-sm hover:bg-gray-100 rounded-md"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <LayoutDashboard className="w-4 h-4" />
+                Dashboard
+              </Link>
+              <Link 
+                to="/facilities" 
+                className="flex items-center gap-2 px-3 py-2 text-sm hover:bg-gray-100 rounded-md"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <Building2 className="w-4 h-4" />
+                Facilities
+              </Link>
+              <Link 
+                to="/funding-sources" 
+                className="flex items-center gap-2 px-3 py-2 text-sm hover:bg-gray-100 rounded-md"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <DollarSign className="w-4 h-4" />
+                Funding
+              </Link>
+              <Link 
+                to="/projects" 
+                className="flex items-center gap-2 px-3 py-2 text-sm hover:bg-gray-100 rounded-md"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <FolderKanban className="w-4 h-4" />
+                Projects
+              </Link>
+              <div className="sm:hidden border-t pt-2 mt-2">
+                <div className="px-3 py-2 text-sm">
+                  <div className="font-medium">{user?.name}</div>
+                  <div className="text-xs text-muted-foreground">{user?.role}</div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* Main Content */}
