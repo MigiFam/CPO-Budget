@@ -37,11 +37,6 @@ export function FundingSourceDetailPage() {
   const { id } = useParams<{ id: string }>();
   const { data: fundingSource, isLoading, error } = useFundingSource(id || '');
 
-  console.log('FundingSourceDetailPage - id:', id);
-  console.log('FundingSourceDetailPage - isLoading:', isLoading);
-  console.log('FundingSourceDetailPage - error:', error);
-  console.log('FundingSourceDetailPage - fundingSource:', fundingSource);
-
   if (!id) {
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

@@ -36,11 +36,6 @@ export function FacilityDetailPage() {
   const { id } = useParams<{ id: string }>();
   const { data: facility, isLoading, error } = useFacility(id || '');
 
-  console.log('FacilityDetailPage - id:', id);
-  console.log('FacilityDetailPage - isLoading:', isLoading);
-  console.log('FacilityDetailPage - error:', error);
-  console.log('FacilityDetailPage - facility:', facility);
-
   if (!id) {
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -122,9 +117,6 @@ export function FacilityDetailPage() {
 
   const facilityData = facility as unknown as FacilityWithProjects;
   const projects = facilityData?.projects || [];
-
-  console.log('FacilityDetailPage - facilityData:', facilityData);
-  console.log('FacilityDetailPage - projects:', projects);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
