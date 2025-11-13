@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
-import { DollarSign, Calendar, FolderKanban, TrendingUp } from 'lucide-react';
+import { DollarSign, Calendar, FolderKanban, TrendingUp, Plus, Pencil, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 import { api } from '../lib/api';
 import type { FundingSource } from '@cpo/types';
+import { CreateFundingSourceModal } from '../components/CreateFundingSourceModal';
+import { EditFundingSourceModal } from '../components/EditFundingSourceModal';
+import { DeleteConfirmModal } from '../components/DeleteConfirmModal';
+import { Button } from '../components/ui/Button';
+import { useAuthStore } from '../store/authStore';
 
 interface FundingSourceWithStats extends FundingSource {
   _count?: {
@@ -11,11 +16,18 @@ interface FundingSourceWithStats extends FundingSource {
   totalAllocation?: number;
 }
 
+const ITEMS_PER_PAGE = 6;
+
 export function FundingSourcesPage() {
+  const { user } = useAuthStore();
   const [fundingSources, setFundingSources] = useState<FundingSourceWithStats[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [filter, setFilter] = useState<string>('all');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
+  const [editingFundingSource, setEditingFundingSource] = useState<FundingSourceWithStats | null>(null);
+  const [deletingFundingSource, setDeletingFundingSource] = useState<FundingSourceWithStats | null>(null);
 
   useEffect(() => {
     fetchFundingSources();
@@ -27,8 +39,9 @@ export function FundingSourcesPage() {
       setError(null);
       const response = await api.get<FundingSourceWithStats[]>('/api/funding-sources');
       setFundingSources(response.data);
-    } catch (err: any) {
-      setError(err.response?.data?.error || 'Failed to load funding sources');
+    } catch (err: unknown) {
+      const error = err as { response?: { data?: { error?: string } } };
+      setError(error.response?.data?.error || 'Failed to load funding sources');
       console.error('Failed to fetch funding sources:', err);
     } finally {
       setLoading(false);
@@ -39,6 +52,32 @@ export function FundingSourcesPage() {
     if (filter === 'all') return true;
     return source.type === filter;
   });
+
+  // Pagination
+  const totalPages = Math.ceil(filteredSources.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const paginatedSources = filteredSources.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+  // Reset to page 1 when filter changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filter]);
+
+  const canEdit = user?.role === 'DIRECTOR' || user?.role === 'FINANCE';
+  const canDelete = user?.role === 'DIRECTOR';
+
+  const handleDelete = async () => {
+    if (!deletingFundingSource) return;
+    
+    try {
+      await api.delete(`/api/funding-sources/${deletingFundingSource.id}`);
+      setFundingSources(fundingSources.filter(f => f.id !== deletingFundingSource.id));
+      setDeletingFundingSource(null);
+    } catch (err: unknown) {
+      const error = err as { response?: { data?: { message?: string } } };
+      alert(error.response?.data?.message || 'Failed to delete funding source');
+    }
+  };
 
   const fundingTypes = Array.from(new Set(fundingSources.map((f) => f.type)));
   const totalAllocation = fundingSources.reduce(
@@ -109,6 +148,12 @@ export function FundingSourcesPage() {
             Bonds, levies, and other capital funding sources
           </p>
         </div>
+        {canEdit && (
+          <Button onClick={() => setIsCreateModalOpen(true)}>
+            <Plus className="w-4 h-4 mr-2" />
+            Add Funding Source
+          </Button>
+        )}
       </div>
 
       {/* Stats Overview */}
@@ -180,13 +225,13 @@ export function FundingSourcesPage() {
 
       {/* Funding Sources Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {filteredSources.map((source) => (
+        {paginatedSources.map((source) => (
           <div
             key={source.id}
             className="bg-white border rounded-lg p-6 hover:shadow-md transition-shadow"
           >
             <div className="flex items-start justify-between mb-4">
-              <div>
+              <div className="flex-1">
                 <h3 className="font-semibold text-lg mb-2">{source.name}</h3>
                 <div className="flex items-center gap-2">
                   <span
@@ -203,8 +248,32 @@ export function FundingSourcesPage() {
                   )}
                 </div>
               </div>
-              <div className="p-3 bg-blue-50 rounded-lg">
-                <DollarSign className="w-6 h-6 text-blue-600" />
+              <div className="flex items-center gap-2">
+                {(canEdit || canDelete) && (
+                  <div className="flex gap-1">
+                    {canEdit && (
+                      <button
+                        onClick={() => setEditingFundingSource(source)}
+                        className="p-2 text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors"
+                        title="Edit funding source"
+                      >
+                        <Pencil className="w-4 h-4" />
+                      </button>
+                    )}
+                    {canDelete && (
+                      <button
+                        onClick={() => setDeletingFundingSource(source)}
+                        className="p-2 text-gray-500 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
+                        title="Delete funding source"
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </button>
+                    )}
+                  </div>
+                )}
+                <div className="p-3 bg-blue-50 rounded-lg">
+                  <DollarSign className="w-6 h-6 text-blue-600" />
+                </div>
               </div>
             </div>
 
@@ -280,6 +349,76 @@ export function FundingSourcesPage() {
           </p>
         </div>
       )}
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <div className="flex items-center justify-between bg-white border rounded-lg p-4">
+          <div className="text-sm text-muted-foreground">
+            Showing {startIndex + 1} to {Math.min(startIndex + ITEMS_PER_PAGE, filteredSources.length)} of {filteredSources.length} funding sources
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+              disabled={currentPage === 1}
+              className="p-2 rounded-md border hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <div className="flex gap-1">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                <button
+                  key={page}
+                  onClick={() => setCurrentPage(page)}
+                  className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                    currentPage === page
+                      ? 'bg-blue-600 text-white'
+                      : 'hover:bg-gray-50 border'
+                  }`}
+                >
+                  {page}
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+              disabled={currentPage === totalPages}
+              className="p-2 rounded-md border hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Modals */}
+      <CreateFundingSourceModal
+        isOpen={isCreateModalOpen}
+        onClose={() => setIsCreateModalOpen(false)}
+        onSuccess={(newSource) => {
+          setFundingSources([...fundingSources, newSource]);
+          setIsCreateModalOpen(false);
+        }}
+      />
+      
+      {editingFundingSource && (
+        <EditFundingSourceModal
+          fundingSource={editingFundingSource}
+          isOpen={!!editingFundingSource}
+          onClose={() => setEditingFundingSource(null)}
+          onSuccess={(updated) => {
+            setFundingSources(fundingSources.map(f => f.id === updated.id ? updated : f));
+            setEditingFundingSource(null);
+          }}
+        />
+      )}
+
+      <DeleteConfirmModal
+        isOpen={!!deletingFundingSource}
+        title="Delete Funding Source"
+        message={`Are you sure you want to delete "${deletingFundingSource?.name}"? This action cannot be undone.`}
+        onConfirm={handleDelete}
+        onCancel={() => setDeletingFundingSource(null)}
+      />
     </div>
   );
 }
