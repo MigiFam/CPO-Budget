@@ -146,18 +146,18 @@ export function FacilityDetailPage() {
           <div className="flex-1">
             <div className="flex items-start justify-between">
               <div>
-                <h1 className="text-3xl font-bold text-gray-900 mb-2">{facilityData.name}</h1>
-                {facilityData.code && (
+                <h1 className="text-3xl font-bold text-gray-900 mb-2">{facilityData?.name || 'Unknown Facility'}</h1>
+                {facilityData?.code && (
                   <p className="text-sm text-gray-500 font-mono mb-3">{facilityData.code}</p>
                 )}
               </div>
               <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium capitalize">
-                {facilityData.type?.toLowerCase().replace('_', ' ')}
+                {facilityData?.type?.toLowerCase().replace('_', ' ') || 'unknown'}
               </span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-              {facilityData.address && (
+              {facilityData?.address && (
                 <div className="flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-gray-400 mt-1" />
                   <div>
@@ -167,7 +167,7 @@ export function FacilityDetailPage() {
                 </div>
               )}
 
-              {facilityData.region && (
+              {facilityData?.region && (
                 <div className="flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-gray-400 mt-1" />
                   <div>

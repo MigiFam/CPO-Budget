@@ -163,18 +163,18 @@ export function FundingSourceDetailPage() {
           <div className="flex-1">
             <div className="flex items-start justify-between">
               <div>
-                <h1 className="text-3xl font-bold text-gray-900 mb-2">{fundingData.name}</h1>
-                {fundingData.code && (
+                <h1 className="text-3xl font-bold text-gray-900 mb-2">{fundingData?.name || 'Unknown Funding Source'}</h1>
+                {fundingData?.code && (
                   <p className="text-sm text-gray-500 font-mono mb-3">{fundingData.code}</p>
                 )}
               </div>
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${getTypeColor(fundingData.type)}`}>
-                {fundingData.type}
+              <span className={`px-3 py-1 rounded-full text-sm font-medium ${getTypeColor(fundingData?.type || 'OTHER')}`}>
+                {fundingData?.type || 'OTHER'}
               </span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-              {(fundingData.startDate || fundingData.endDate) && (
+              {(fundingData?.startDate || fundingData?.endDate) && (
                 <div className="flex items-start gap-2">
                   <Calendar className="w-4 h-4 text-gray-400 mt-1" />
                   <div>
