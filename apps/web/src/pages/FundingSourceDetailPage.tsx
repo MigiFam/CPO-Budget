@@ -35,7 +35,7 @@ interface FundingSourceWithProjects {
 
 export function FundingSourceDetailPage() {
   const { id } = useParams<{ id: string }>();
-  const { data: fundingSource, isLoading, error } = useFundingSource(id || '');
+  const { data: fundingSource, isLoading, error, isFetching } = useFundingSource(id || '');
 
   if (!id) {
     return (
@@ -58,7 +58,7 @@ export function FundingSourceDetailPage() {
     );
   }
 
-  if (isLoading) {
+  if (isLoading || isFetching) {
     return (
       <div className="flex items-center justify-center min-h-[400px]">
         <Loader2 className="w-8 h-8 text-blue-600 animate-spin" />

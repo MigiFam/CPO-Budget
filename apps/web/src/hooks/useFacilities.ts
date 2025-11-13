@@ -34,5 +34,7 @@ export function useFacility(facilityId: string) {
       return response.data;
     },
     enabled: !!facilityId,
+    retry: false,
+    throwOnError: false,
   });
 }

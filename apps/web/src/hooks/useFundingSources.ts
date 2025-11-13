@@ -31,5 +31,7 @@ export function useFundingSource(fundingSourceId: string) {
       return response.data;
     },
     enabled: !!fundingSourceId,
+    retry: false,
+    throwOnError: false,
   });
 }
