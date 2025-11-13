@@ -1,9 +1,8 @@
 import axios, { AxiosError } from 'axios';
 import type { ApiResponse } from '@cpo/types';
 
-// Use relative URL in production (same domain), localhost in development
-const API_URL = import.meta.env.VITE_API_URL || 
-  (import.meta.env.PROD ? '' : 'http://localhost:3001');
+// Use Render API in production, localhost in development
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
 
 export const api = axios.create({
   baseURL: API_URL,
