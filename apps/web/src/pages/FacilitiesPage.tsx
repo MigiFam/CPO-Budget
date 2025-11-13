@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Building2, MapPin, Code, FolderKanban } from 'lucide-react';
+import { Building2, MapPin, Code, FolderKanban, Plus, Pencil, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 import { api } from '../lib/api';
 import type { Facility } from '@cpo/types';
+import { CreateFacilityModal } from '../components/CreateFacilityModal';
+import { EditFacilityModal } from '../components/EditFacilityModal';
+import { DeleteConfirmModal } from '../components/DeleteConfirmModal';
+import { Button } from '../components/ui/Button';
+import { useAuthStore } from '../store/authStore';
 
 interface FacilityWithStats extends Facility {
   _count?: {
@@ -9,11 +14,18 @@ interface FacilityWithStats extends Facility {
   };
 }
 
+const ITEMS_PER_PAGE = 9;
+
 export function FacilitiesPage() {
+  const { user } = useAuthStore();
   const [facilities, setFacilities] = useState<FacilityWithStats[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [filter, setFilter] = useState<string>('all');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
+  const [editingFacility, setEditingFacility] = useState<FacilityWithStats | null>(null);
+  const [deletingFacility, setDeletingFacility] = useState<FacilityWithStats | null>(null);
 
   useEffect(() => {
     fetchFacilities();
@@ -25,8 +37,9 @@ export function FacilitiesPage() {
       setError(null);
       const response = await api.get<FacilityWithStats[]>('/api/facilities');
       setFacilities(response.data);
-    } catch (err: any) {
-      setError(err.response?.data?.error || 'Failed to load facilities');
+    } catch (err: unknown) {
+      const error = err as { response?: { data?: { error?: string } } };
+      setError(error.response?.data?.error || 'Failed to load facilities');
       console.error('Failed to fetch facilities:', err);
     } finally {
       setLoading(false);
@@ -40,6 +53,32 @@ export function FacilitiesPage() {
 
   const facilityTypes = Array.from(new Set(facilities.map((f) => f.type)));
   const totalProjects = facilities.reduce((sum, f) => sum + (f._count?.projects || 0), 0);
+
+  // Pagination
+  const totalPages = Math.ceil(filteredFacilities.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const paginatedFacilities = filteredFacilities.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+  // Reset to page 1 when filter changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filter]);
+
+  const canEdit = user?.role === 'DIRECTOR' || user?.role === 'FINANCE';
+  const canDelete = user?.role === 'DIRECTOR';
+
+  const handleDelete = async () => {
+    if (!deletingFacility) return;
+    
+    try {
+      await api.delete(`/api/facilities/${deletingFacility.id}`);
+      setFacilities(facilities.filter(f => f.id !== deletingFacility.id));
+      setDeletingFacility(null);
+    } catch (err: unknown) {
+      const error = err as { response?: { data?: { message?: string } } };
+      alert(error.response?.data?.message || 'Failed to delete facility');
+    }
+  };
 
   if (loading) {
     return (
@@ -70,6 +109,12 @@ export function FacilitiesPage() {
             Manage school buildings and educational facilities
           </p>
         </div>
+        {canEdit && (
+          <Button onClick={() => setIsCreateModalOpen(true)}>
+            <Plus className="w-4 h-4 mr-2" />
+            Add Facility
+          </Button>
+        )}
       </div>
 
       {/* Stats Overview */}
@@ -141,7 +186,7 @@ export function FacilitiesPage() {
 
       {/* Facilities Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {filteredFacilities.map((facility) => (
+        {paginatedFacilities.map((facility) => (
           <div
             key={facility.id}
             className="bg-white border rounded-lg p-6 hover:shadow-md transition-shadow"
@@ -160,6 +205,28 @@ export function FacilitiesPage() {
                   )}
                 </div>
               </div>
+              {(canEdit || canDelete) && (
+                <div className="flex gap-1">
+                  {canEdit && (
+                    <button
+                      onClick={() => setEditingFacility(facility)}
+                      className="p-2 text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors"
+                      title="Edit facility"
+                    >
+                      <Pencil className="w-4 h-4" />
+                    </button>
+                  )}
+                  {canDelete && (
+                    <button
+                      onClick={() => setDeletingFacility(facility)}
+                      className="p-2 text-gray-500 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
+                      title="Delete facility"
+                    >
+                      <Trash2 className="w-4 h-4" />
+                    </button>
+                  )}
+                </div>
+              )}
             </div>
 
             <div className="space-y-2">
@@ -208,6 +275,76 @@ export function FacilitiesPage() {
           </p>
         </div>
       )}
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <div className="flex items-center justify-between bg-white border rounded-lg p-4">
+          <div className="text-sm text-muted-foreground">
+            Showing {startIndex + 1} to {Math.min(startIndex + ITEMS_PER_PAGE, filteredFacilities.length)} of {filteredFacilities.length} facilities
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+              disabled={currentPage === 1}
+              className="p-2 rounded-md border hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <div className="flex gap-1">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                <button
+                  key={page}
+                  onClick={() => setCurrentPage(page)}
+                  className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                    currentPage === page
+                      ? 'bg-blue-600 text-white'
+                      : 'hover:bg-gray-50 border'
+                  }`}
+                >
+                  {page}
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+              disabled={currentPage === totalPages}
+              className="p-2 rounded-md border hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Modals */}
+      <CreateFacilityModal
+        isOpen={isCreateModalOpen}
+        onClose={() => setIsCreateModalOpen(false)}
+        onSuccess={(newFacility) => {
+          setFacilities([...facilities, newFacility]);
+          setIsCreateModalOpen(false);
+        }}
+      />
+      
+      {editingFacility && (
+        <EditFacilityModal
+          facility={editingFacility}
+          isOpen={!!editingFacility}
+          onClose={() => setEditingFacility(null)}
+          onSuccess={(updated) => {
+            setFacilities(facilities.map(f => f.id === updated.id ? updated : f));
+            setEditingFacility(null);
+          }}
+        />
+      )}
+
+      <DeleteConfirmModal
+        isOpen={!!deletingFacility}
+        title="Delete Facility"
+        message={`Are you sure you want to delete "${deletingFacility?.name}"? This action cannot be undone.`}
+        onConfirm={handleDelete}
+        onCancel={() => setDeletingFacility(null)}
+      />
     </div>
   );
 }
