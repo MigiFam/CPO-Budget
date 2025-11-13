@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuthStore } from './store/authStore';
 import { Layout } from './components/Layout';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { AuthPage } from './pages/AuthPage';
 import { DashboardPage } from './pages/DashboardPage';
 import { FacilitiesPage } from './pages/FacilitiesPage';
@@ -41,11 +42,23 @@ function App() {
       >
         <Route index element={<DashboardPage />} />
         <Route path="facilities" element={<FacilitiesPage />} />
-        <Route path="facilities/:id" element={<FacilityDetailPage />} />
+        <Route path="facilities/:id" element={
+          <ErrorBoundary fallbackPath="/facilities" fallbackLabel="Back to Facilities">
+            <FacilityDetailPage />
+          </ErrorBoundary>
+        } />
         <Route path="funding-sources" element={<FundingSourcesPage />} />
-        <Route path="funding-sources/:id" element={<FundingSourceDetailPage />} />
+        <Route path="funding-sources/:id" element={
+          <ErrorBoundary fallbackPath="/funding-sources" fallbackLabel="Back to Funding Sources">
+            <FundingSourceDetailPage />
+          </ErrorBoundary>
+        } />
         <Route path="projects" element={<ProjectsPage />} />
-        <Route path="projects/:id" element={<ProjectDetailPage />} />
+        <Route path="projects/:id" element={
+          <ErrorBoundary fallbackPath="/projects" fallbackLabel="Back to Projects">
+            <ProjectDetailPage />
+          </ErrorBoundary>
+        } />
         {/* TODO: Add more routes */}
       </Route>
     </Routes>
