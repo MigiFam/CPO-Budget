@@ -4,6 +4,7 @@ import { Layout } from './components/Layout';
 import { AuthPage } from './pages/AuthPage';
 import { DashboardPage } from './pages/DashboardPage';
 import { FacilitiesPage } from './pages/FacilitiesPage';
+import { FacilityDetailPage } from './pages/FacilityDetailPage';
 import { FundingSourcesPage } from './pages/FundingSourcesPage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { ProjectDetailPage } from './pages/ProjectDetailPage';
@@ -39,6 +40,7 @@ function App() {
       >
         <Route index element={<DashboardPage />} />
         <Route path="facilities" element={<FacilitiesPage />} />
+        <Route path="facilities/:id" element={<FacilityDetailPage />} />
         <Route path="funding-sources" element={<FundingSourcesPage />} />
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="projects/:id" element={<ProjectDetailPage />} />

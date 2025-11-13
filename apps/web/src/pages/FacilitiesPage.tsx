@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Building2, MapPin, Code, FolderKanban, Plus, Pencil, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 import { api } from '../lib/api';
 import type { Facility } from '@cpo/types';
@@ -189,75 +190,88 @@ export function FacilitiesPage() {
         {paginatedFacilities.map((facility) => (
           <div
             key={facility.id}
-            className="bg-white border rounded-lg p-6 hover:shadow-md transition-shadow"
+            className="bg-white border rounded-lg hover:shadow-lg transition-shadow group"
           >
-            <div className="flex items-start justify-between mb-4">
-              <div className="flex items-center gap-3">
-                <div className="p-2 bg-blue-100 rounded-lg">
-                  <Building2 className="w-5 h-5 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">{facility.name}</h3>
-                  {facility.code && (
-                    <p className="text-xs text-muted-foreground font-mono">
-                      {facility.code}
-                    </p>
-                  )}
+            {/* Action Buttons */}
+            {(canEdit || canDelete) && (
+              <div className="absolute top-4 right-4 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity z-10">
+                {canEdit && (
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      setEditingFacility(facility);
+                    }}
+                    className="p-2 bg-white text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded shadow-sm border transition-colors"
+                    title="Edit facility"
+                  >
+                    <Pencil className="w-4 h-4" />
+                  </button>
+                )}
+                {canDelete && (
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      setDeletingFacility(facility);
+                    }}
+                    className="p-2 bg-white text-gray-500 hover:text-red-600 hover:bg-red-50 rounded shadow-sm border transition-colors"
+                    title="Delete facility"
+                  >
+                    <Trash2 className="w-4 h-4" />
+                  </button>
+                )}
+              </div>
+            )}
+
+            {/* Clickable Card Content */}
+            <Link to={`/facilities/${facility.id}`} className="block p-6">
+              <div className="flex items-start justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-blue-100 rounded-lg">
+                    <Building2 className="w-5 h-5 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg group-hover:text-blue-600 transition-colors">{facility.name}</h3>
+                    {facility.code && (
+                      <p className="text-xs text-muted-foreground font-mono">
+                        {facility.code}
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
-              {(canEdit || canDelete) && (
-                <div className="flex gap-1">
-                  {canEdit && (
-                    <button
-                      onClick={() => setEditingFacility(facility)}
-                      className="p-2 text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors"
-                      title="Edit facility"
-                    >
-                      <Pencil className="w-4 h-4" />
-                    </button>
-                  )}
-                  {canDelete && (
-                    <button
-                      onClick={() => setDeletingFacility(facility)}
-                      className="p-2 text-gray-500 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
-                      title="Delete facility"
-                    >
-                      <Trash2 className="w-4 h-4" />
-                    </button>
-                  )}
-                </div>
-              )}
-            </div>
 
-            <div className="space-y-2">
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Code className="w-4 h-4" />
-                <span className="capitalize">{facility.type}</span>
-              </div>
-
-              {facility.address && (
+              <div className="space-y-2">
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <MapPin className="w-4 h-4" />
-                  <span className="line-clamp-1">{facility.address}</span>
+                  <Code className="w-4 h-4" />
+                  <span className="capitalize">{facility.type}</span>
                 </div>
-              )}
 
-              {facility.region && (
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <MapPin className="w-4 h-4" />
-                  <span>{facility.region}</span>
-                </div>
-              )}
+                {facility.address && (
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <MapPin className="w-4 h-4" />
+                    <span className="line-clamp-1">{facility.address}</span>
+                  </div>
+                )}
 
-              <div className="pt-3 mt-3 border-t">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-muted-foreground">Projects</span>
-                  <span className="text-sm font-semibold">
-                    {facility._count?.projects || 0}
-                  </span>
+                {facility.region && (
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <MapPin className="w-4 h-4" />
+                    <span>{facility.region}</span>
+                  </div>
+                )}
+
+                <div className="pt-3 mt-3 border-t">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-muted-foreground">Projects</span>
+                    <span className="text-sm font-semibold">
+                      {facility._count?.projects || 0}
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         ))}
       </div>
