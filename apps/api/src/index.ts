@@ -68,11 +68,13 @@ app.use('/api/admin', adminRoutes);
 app.use(notFoundHandler);
 app.use(errorHandler);
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`🚀 API server running on port ${PORT}`);
-  console.log(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
-  console.log(`🔧 Data mode: ${process.env.VITE_DATA_MODE || 'demo'}`);
-});
+// Start server (only when not running on Vercel serverless)
+if (process.env.NODE_ENV !== 'production' || process.env.VERCEL !== '1') {
+  app.listen(PORT, () => {
+    console.log(`🚀 API server running on port ${PORT}`);
+    console.log(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
+    console.log(`🔧 Data mode: ${process.env.VITE_DATA_MODE || 'demo'}`);
+  });
+}
 
 export default app;
